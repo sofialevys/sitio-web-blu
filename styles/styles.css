@@ -16,39 +16,47 @@
 header{
    grid-area: cabecera;
    background-image: url(../imagenes/4.jpeg);
-   background-size: 400px;
+   background-size: 200px;
    display: flex;
    align-items: center;
-   justify-content: space-evenly;
+   justify-content: start;
+   flex-wrap: wrap;
 }
 
 .header__logo {
     border-radius: 50px;
+    height:100px;
+    width: 100px;
 }
 
 .header__titulo {
-    font-size: 60px;
+    font-size: 30px;
     font-family: curvilingus;
-    color: #771e16;
+    color: #b37d22;
     margin-top: 10px;
     text-align: center;
 }
 
 .header__lista {
     list-style-type: none;
-    margin-left: 40px;
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .header__lista li a{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    height: 30px;
-    margin-right: 20px;
-    margin-top: 20px;
+    height: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
     color: #b37d22;
     font-family: keepontruckin;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: lighter;
     text-decoration: none;
     border: 02px solid;
@@ -62,18 +70,23 @@ header{
 .main {
     grid-area: main;
     background-image: url(../imagenes/4.jpeg);
-    background-size: 400px;
+    background-size: 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: start;
+
 }
 
+.main__video {
+    margin-top: 20px;
+    width: 320px;
+    height: 300px;
 
+}
 .main__titulo {
     font-family: curvilingus;
     color: #dca015;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
 
@@ -82,9 +95,9 @@ header{
 .main__parrafo {
     font-family: keepontruckin;
     color: #b37d22;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: lighter;
-    bottom: 230px;
+    width: 320px;
     text-decoration: none;
 
 }
@@ -92,15 +105,16 @@ header{
 .footer {
     grid-area: pieDepagina;
     background-image: url(../imagenes/4.jpeg);
-    background-size: 400px;
+    background-size: 200px;
 }
 
 .footer__links {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 100px;
+    padding: 30px;
     list-style-type: none;
+
 }
 
 /*css galeria*/
@@ -125,6 +139,8 @@ header{
     border-radius: 10px;
     border: 03px solid;
     border-color: #060606;
+    height: 140px;
+    width: 140px;
 }
 
 .footer__gal {
@@ -241,44 +257,63 @@ header{
 
 @media screen and (min-width: 1200px) {
     .grilla {
-      grid-template-areas: 
-      "cabecera cabecera"
-      "main main"
-      "piDePagina pieDePagina";
-      grid-template-rows: repeat(3, 1fr);
-      grid-template-columns: repeat(2, 1fr);
-      height: 100vh;
-    }
+        grid-template-areas: 
+        "cabecera cabecera"
+        "main main"
+        "piDePagina pieDePagina";
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        height: 100vh;
+      }
 
-    header{
+    header {
         grid-area: cabecera;
         background-image: url(../imagenes/7.jpeg);
         background-size: 400px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-     }
-
-     .header__lista {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 40px;
     }
-  
-     
-     .header__titulo {
-         font-size: 80px;
+
+    .header__logo {
+        border-radius: 50px;
+        height: 150px;
+        width: 150px;
+    }
+
+    .header__titulo{
+        font-size: 80px;
          font-family: curvilingus;
          color: #78180d;
          margin-top: 10px;
          text-align: center;
      }
 
-     
-     
-     .main {
+    .header__lista{
+        list-style-type: none;
+        display: flex;
+        width: 600px;
+        margin-top: 80px;
+    }
+
+    .header__lista li a{
+        height: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        color: #b37d22;
+        font-family: keepontruckin;
+        font-size: 25px;
+        font-weight: lighter;
+        text-decoration: none;
+        border: 02px solid;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-image: url(../imagenes/2.jpeg);
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    .main {
         grid-area: main;
         background-image: url(../imagenes/7.jpeg);
         background-size: 400px;
@@ -286,6 +321,11 @@ header{
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+    }
+
+    .main__video {
+        height: 400px;
+        width: 600px;
     }
 
     .main__titulo {
@@ -302,17 +342,27 @@ header{
         color: #b37d22;
         font-size: 30px;
         font-weight: lighter;
-        bottom: 230px;
         text-decoration: none;
+        width: 800px;
     
     }
+
     
     .footer {
         grid-area: pieDepagina;
         background-image: url(../imagenes/7.jpeg);
         background-size: 400px;
     }
-         
+
+    .fotoUno {
+        border-radius: 10px;
+        border: 03px solid;
+        border-color: #060606;
+        height: 300px;
+        width: 300px;
+   }
+    
+
  }
 
 
@@ -320,7 +370,7 @@ header{
 
 
   
- @media screen and (max-width: 600px) {
+@media screen and (min-width: 400px) and (max-width: 1200px)  {
     .grilla {
       grid-template-areas: 
       "cabecera cabecera"
@@ -334,22 +384,48 @@ header{
     header{
         grid-area: cabecera;
         background-image: url(../imagenes/2.jpeg);
-
         background-size: 400px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-     }
+    }
   
-     
+    .header__logo {
+        border-radius: 50px;
+        height: 150px;
+        width: 150px;
+    }
     .header__titulo {
          font-size: 80px;
          font-family: curvilingus;
          color: #78180d;
          margin-top: 10px;
          text-align: center;
-     }
-     
+    }
+
+    .header__lista{
+        list-style-type: none;
+        display: flex;
+        width:400px;
+        margin-top: 80px;
+    }
+    
+    .header__lista li a{
+        height: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        color: #b37d22;
+        font-family: keepontruckin;
+        font-size: 25px;
+        font-weight: lighter;
+        text-decoration: none;
+        border: 02px solid;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-image: url(../imagenes/2.jpeg);
+        background-size: cover;
+        border-radius: 10px;
+    }
 
     .main {
         grid-area: main;
@@ -359,6 +435,11 @@ header{
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+    }
+
+    .main__video {
+        height: 400px;
+        width: 600px;
     }
 
     .main__titulo {
@@ -375,8 +456,8 @@ header{
         color: #b37d22;
         font-size: 30px;
         font-weight: lighter;
-        bottom: 230px;
         text-decoration: none;
+        width: 800px;
     
     }
     
@@ -385,6 +466,14 @@ header{
         background-image: url(../imagenes/2.jpeg);
         background-size: 400px;
     }
+
+    .fotoUno {
+        border-radius: 10px;
+        border: 03px solid;
+        border-color: #060606;
+        height: 250px;
+        width: 250px;
+   }
          
 }
 
