@@ -232,6 +232,13 @@ header{
     width: 100px;
     background-color: #b37d22;
     cursor: pointer;
+    transition: all 0.5s ease-out;
+
+}
+
+.boton:hover{
+    padding: 10px;
+    background-color:#f4cb85 ;
 }
 
 /*css tips*/
@@ -620,6 +627,8 @@ header{
         background-color: #b37d22;
         cursor: pointer;
     }
+
+
      /*css canciones*/
 
     .header__fondo {
