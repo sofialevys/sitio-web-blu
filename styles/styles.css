@@ -297,8 +297,9 @@ header{
         list-style-type: none;
         display: flex;
         width: 600px;
-        margin-top: 80px;
+        margin-top: 80px;  
     }
+    
 
     .header__lista li a{
         height: 10px;
@@ -364,8 +365,15 @@ header{
         border-color: #060606;
         height: 300px;
         width: 300px;
+        transition: all 0.5s;
    }
 
+    .fotoUno:hover {
+        height: 350px;
+        width: 350px;
+        border-color: #b37d22;
+    }
+    
    /*css cont*/
 
     .main--cont {
@@ -414,6 +422,7 @@ header{
         padding: 10px;
         background-color: #deb657;
     }
+
     }
     
    /*css canciones*/
@@ -473,7 +482,7 @@ header{
         background-image: url(../imagenes/4.jpeg);
         background-size: 400px;
     }
-     }
+
 
 
      
