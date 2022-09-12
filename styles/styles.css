@@ -42,7 +42,7 @@ header{
     width: 300px;
     height: 100px;
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -50,7 +50,6 @@ header{
 }
 
 .header__lista li a{
-    justify-content: center;
     height: 10px;
     margin-right: 10px;
     margin-top: 10px;
@@ -73,14 +72,14 @@ header{
     background-size: 200px;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
 
 }
 
 .main__video {
     margin-top: 20px;
-    width: 320px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 
 }
 .main__titulo {
@@ -97,7 +96,7 @@ header{
     color: #b37d22;
     font-size: 15px;
     font-weight: lighter;
-    width: 320px;
+    width: 250px;
     text-decoration: none;
 
 }
