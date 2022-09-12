@@ -154,14 +154,13 @@ header{
 
 /*css canciones*/
 
-.header--fondo {
-    background-image: url(../imagenes/3.jpeg);
-    background-size: 400px;
+.header__fondo {
+    background-image:url(../imagenes/3.jpeg);
 }
 
 .header__titulo--dis {
     color: #b37d22;
-    font-size: 60px;
+    font-size: 30px;
     font-family: curvilingus;
     margin-top: 10px;
     text-align: center;
@@ -192,6 +191,7 @@ header{
 .footer--can{
     background-image: url(../imagenes/3.jpeg);
     background-size: 400px;
+    margin-top: 50px;
 
 }
 
@@ -242,9 +242,13 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-image: url(../imagenes/3.jpeg);
+    background-image: url(../imagenes/4.jpeg);
     background-size: 400px;
-    
+   }
+
+.footer__tips {
+    background-image: url(../imagenes/4.jpeg);
+    background-size: 400px;
 }
 
 @font-face {
@@ -397,6 +401,7 @@ header{
         
     }
     
+    
     .boton {
         border-radius: 10px;
         font-size: 15px;
@@ -405,6 +410,48 @@ header{
         cursor: pointer;
     }
     
+   /*css canciones*/
+
+    .header__fondo {
+        background-image:url(../imagenes/3.jpeg);
+    }
+    
+    .header__titulo--dis {
+        color: #b37d22;
+        font-size: 80px;
+        font-family: curvilingus;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .main--canciones{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-image: url(../imagenes/3.jpeg);
+        background-size: 400px;
+    }
+    
+    
+    .tabla {
+        height: 220px;
+        width: 500px;
+        color: #b37d22;
+        border: 10px;
+        background-color: #030303;
+        font-family: keepontruckin;
+        border-radius: 10px;
+        border-color: #b37d22;
+    }
+    
+    .footer--can{
+        background-image: url(../imagenes/3.jpeg);
+        background-size: 400px;
+    
+    }
+
+
+    
     /*css tips*/
     
     .main--tips{
@@ -412,12 +459,15 @@ header{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        background-image: url(../imagenes/3.jpeg);
+        background-image: url(../imagenes/4.jpeg);
         background-size: 400px;
-        
-    }
+       }
 
- }
+    .footer__tips {
+        background-image: url(../imagenes/4.jpeg);
+        background-size: 400px;
+    }
+     }
 
 
      
@@ -531,61 +581,104 @@ header{
    
    /*css cont*/
 
-   .main--cont {
-    height: 800px;
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .main--cont {
+        height: 800px;  
+        background-image: url(../imagenes/4.jpeg);
+        background-size: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-
-}
-
-.texto__cont {
-    font-family: curvilingus;
-    color: #b37d22;
-    font-size: 30px;
-    text-align: center;
-    text-decoration: underline;
-    width: 600px;
-
-}
-
-.formulario {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items:center ;
-    width: 300px;
-    color: #b37d22;
-    text-align: center;
-    font-family: keepontruckin;
-    font-size: 20px;
+    .texto__cont {
+        font-family: curvilingus;
+        color: #b37d22;
+        font-size: 30px;
+        text-align: center;
+        text-decoration: underline;
+        width: 600px;
     
-}
-
-.boton {
-    border-radius: 10px;
-    font-size: 15px;
-    width: 100px;
-    background-color: #b37d22;
-    cursor: pointer;
-}
-
-/*css tips*/
-
-.main--tips{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../imagenes/3.jpeg);
-    background-size: 400px;
+    }
     
-}
-   
+    .formulario {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        width: 300px;
+        color: #b37d22;
+        text-align: center;
+        font-family: keepontruckin;
+        font-size: 20px;
+        
+    }
+    
+    .boton {
+        border-radius: 10px;
+        font-size: 15px;
+        width: 100px;
+        background-color: #b37d22;
+        cursor: pointer;
+    }
+     /*css canciones*/
+
+    .header__fondo {
+        background-image:url(../imagenes/3.jpeg);
+    }
+    
+    .header__titulo--dis {
+        color: #b37d22;
+        font-size: 80px;
+        font-family: curvilingus;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .main--canciones{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-image: url(../imagenes/3.jpeg);
+        background-size: 400px;
+    }
+    
+    
+    .tabla {
+        position: relative;
+        top:50px;
+        height: 200px;
+        width: 500px;
+        color: #b37d22;
+        border: 10px;
+        background-color: #030303;
+        font-family: keepontruckin;
+        border-radius: 10px;
+        border-color: #b37d22;
+    }
+    
+    .footer--can{
+        background-image: url(../imagenes/3.jpeg);
+        background-size: 400px;
+    }
+
+
+
+    /*css tips*/
+
+    .main--tips{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../imagenes/4.jpeg);
+        background-size: 400px;
+       }
+
+    .footer__tips {
+        background-image: url(../imagenes/4.jpeg);
+        background-size: 400px;
+    }
 }
          
 
