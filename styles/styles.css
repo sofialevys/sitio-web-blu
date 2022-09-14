@@ -2,16 +2,6 @@
     margin: 0;
     padding: 0;
 }
-/*.grid {
-    display: grid;
-    grid-template-areas:
-    "cabecera"
-    "main"
-    "pieDepagina";
-    grid-template-rows: (3, 1fr);
-    grid-template-columns: 1fr;
-    height: 100vh;   
-}*/
 
 header{
    grid-area: cabecera;
@@ -39,8 +29,6 @@ header{
 
 .header__lista {
     list-style-type: none;
-    width: 300px;
-    height: 100px;
     margin-top: 20px;
     margin-left: 20px;
     display: flex;
@@ -52,12 +40,13 @@ header{
 .header__lista li a{
     color: #b37d22;
     font-family: keepontruckin;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: lighter;
     text-decoration: none;
     border: 02px solid;
     padding: 10px;
-    background-image: url(../imagenes/2.jpeg);
+    margin-left: 05px;
+    background-image: url(../imagenes/4.jpeg);
     background-size: cover;
     border-radius: 10px;
 }
@@ -74,34 +63,34 @@ header{
 }
 
 .main__video {
-    margin-top: 20px;
-    width: 250px;
-    height: 250px;
+   
+    
 
 }
 .main__titulo {
     font-family: curvilingus;
     color: #dca015;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
+    text-decoration: underline;
 
 }
 
 .main__parrafo {
     font-family: keepontruckin;
     color: #b37d22;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: lighter;
-    width: 250px;
     text-decoration: none;
+    text-align: center;
 
 }
 
 .footer {
     grid-area: pieDepagina;
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 200px;
+    background-image: url(../imagenes/7.jpeg);
+    background-size: 400px;
 }
 
 .footer__links {
