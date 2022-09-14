@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-.grid {
+/*.grid {
     display: grid;
     grid-template-areas:
     "cabecera"
@@ -11,28 +11,28 @@
     grid-template-rows: (3, 1fr);
     grid-template-columns: 1fr;
     height: 100vh;   
-}
+}*/
 
 header{
    grid-area: cabecera;
-   background-image: url(../imagenes/4.jpeg);
-   background-size: 200px;
+   background-image: url(../imagenes/7.jpeg);
+   background-size: 400px;
    display: flex;
    align-items: center;
-   justify-content: start;
+   justify-content: space-evenly;
    flex-wrap: wrap;
 }
 
 .header__logo {
     border-radius: 50px;
-    height:100px;
-    width: 100px;
+    height:150px;
+    width: 150px;
 }
 
 .header__titulo {
-    font-size: 30px;
+    font-size: 70px;
     font-family: curvilingus;
-    color: #b37d22;
+    color: #78180d;
     margin-top: 10px;
     text-align: center;
 }
@@ -44,23 +44,19 @@ header{
     margin-top: 20px;
     margin-left: 20px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
 
 }
 
 .header__lista li a{
-    height: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
     color: #b37d22;
     font-family: keepontruckin;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: lighter;
     text-decoration: none;
     border: 02px solid;
     padding: 10px;
-    margin-bottom: 10px;
     background-image: url(../imagenes/2.jpeg);
     background-size: cover;
     border-radius: 10px;
@@ -68,10 +64,11 @@ header{
 
 .main {
     grid-area: main;
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 200px;
+    background-image: url(../imagenes/7.jpeg);
+    background-size: 400px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 
 }
@@ -259,7 +256,7 @@ header{
     src: url(../fonts/keep_on_truckin_fw/KeeponTruckin.ttf);
 }
 
-@media screen and (min-width: 1200px) {
+/*@media screen and (min-width: 1200px) {
     .grilla {
         grid-template-areas: 
         "cabecera cabecera"
@@ -327,7 +324,7 @@ header{
         align-items: center;
         justify-content: space-evenly;
     }
-
+    .ca
     .main__video {
         height: 400px;
         width: 600px;
@@ -376,7 +373,7 @@ header{
     
    /*css cont*/
 
-    .main--cont {
+   /* .main--cont {
         height: 800px;
         background-image: url(../imagenes/4.jpeg);
         background-size: 400px;
@@ -427,7 +424,7 @@ header{
     
    /*css canciones*/
 
-    .header__fondo {
+    /*.header__fondo {
         background-image:url(../imagenes/3.jpeg);
     }
     
@@ -469,7 +466,7 @@ header{
     
     /*css tips*/
     
-    .main--tips{
+    /*.main--tips{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -596,7 +593,7 @@ header{
    
    /*css cont*/
 
-    .main--cont {
+    /*.main--cont {
         height: 800px;  
         background-image: url(../imagenes/4.jpeg);
         background-size: 400px;
@@ -638,7 +635,7 @@ header{
     }
      /*css canciones*/
 
-    .header__fondo {
+    /*.header__fondo {
         background-image:url(../imagenes/3.jpeg);
     }
     
@@ -681,7 +678,7 @@ header{
 
     /*css tips*/
 
-    .main--tips{
+    /*.main--tips{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
