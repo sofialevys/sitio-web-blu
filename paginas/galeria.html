@@ -8,41 +8,58 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Galeria</title>
 </head>
-<body class="grid">
-    <header class="header__gal">
-        <a href="../index.html" width="150px" height="150px">
-            <img class="header__logo" src="../imagenes/logo.jpeg" alt="Logo de la pagina" width="150px" height="150px">
-        </a>
-        <h1 class="header__titulo">Blu y sus 13</h1>
-        <nav>
-            <ul class="header__lista">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="./tips.html">Tips</a></li>
-                <li><a href="./canciones.html">Canciones</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main--galeria">
-        <img class="fotoUno" src="../imagenes/g6.jpeg" alt="Foto 1" width="300px" height="300px">
-        <img class="fotoUno" src="../imagenes/e1.jpeg" alt="Foto 2" width="300px" height="300px">
-        <img class="fotoUno" src="../imagenes/e2.jpeg" alt="Foto 3" width="300px" height="300px">
-        <img class="fotoUno" src="../imagenes/e3.jpeg" alt="Foto 4" width="300px" height="300px">
-        <img class="fotoUno" src="../imagenes/e4.jpeg" alt="Foto 5" width="300px" height="300px">
-        <img class="fotoUno" src="../imagenes/e5.jpeg" alt="Foto 6" width="300px" height="300px">
-        <img class="fotoUno" src="../imagenes/e6.jpeg" alt="Foto 7" width="300px" height="300px">
-        <img class="fotoUno" src="../imagenes/e7.jpeg" alt="Foto 8" width="300px" height="300px">
-        <img class="fotoUno" src="../imagenes/e8.jpeg" alt="Foto 9" width="300px" height="300px">
-        <img class="fotoUno" src="../imagenes/g1.jpeg" alt="Foto 10" width="300px" height="300px">
-        <img class="fotoUno" src="../imagenes/g2.jpeg" alt="Foto 11" width="300px" height="300px">
-        <img class="fotoUno" src="../imagenes/g3.jpeg" alt="Foto 12" width="300px" height="300px">
-        <img class="fotoUno" src="../imagenes/g4.jpeg" alt="Foto 13" width="300px" height="300px">
-        <img class="fotoUno" src="../imagenes/g5.jpeg" alt="Foto 14" width="300px" height="300px">
-        <img class="fotoUno" src="../imagenes/g8.jpeg" alt="Foto 15" width="300px" height="300px">
-        <img class="fotoUno" src="../imagenes/g7.jpeg" alt="Foto 16" width="300px" height="300px">
-    </main>
-    <footer class="footer__gal">
+<body>
+    <section class="row">
+        <section class="col-12">
+          <header class="p-4 text-center header__gal">
+            <a href="../index.html">
+                <img class="header__logo" src="../imagenes/logo.jpeg" alt="Logo de la pagina" width="150px" height="150px">
+            </a>
+            <h1 class=" fw-bold header__titulo">Blu y sus 13</h1>
+            <nav>
+                <ul class="nav justify-content-center header__lista">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./paginas/tips.html">Tips</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./paginas/galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/canciones.html">Canciones</a>
+                    </li>
+                  </ul>
+            </nav>
+         </header>
+        </section>
+    </section>
+    <div id="carouselExampleControls" class="main__galeria carousel slide w-80 p-3" style="background-color: rgb(42, 5, 5)" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../imagenes/e1.jpeg" class="d-block w-100" alt="foto 1">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/e2.jpeg" class="d-block w-100" alt="foto 2">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/e3.jpeg" class="d-block w-100" alt="foto 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <footer class="footer__gal" >
         <ul class="footer__links">
             <li>
                 <a href="https://www.instagram.com/bluvaloop/" target="_blank">
@@ -61,7 +78,7 @@
             </li>
             <li>
                 <a href="https://www.spotify.com" target="_blank">
-                    <img src="../imagenes/logo spotify.png"Logo spotify width="50px" height="50px">
+                    <img src="../imagenes/logo spotify.png"Logo spotify" width="50px" height="50px">
                 </a>
             </li>
             <li>
@@ -71,6 +88,6 @@
             </li>
         </ul>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
