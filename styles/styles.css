@@ -301,7 +301,6 @@ header{
         width: 600px;
         margin-top: 80px;
     }
-
     .header__lista li a{
         height: 10px;
         margin-right: 10px;
@@ -317,6 +316,12 @@ header{
         background-image: url(../imagenes/2.jpeg);
         background-size: cover;
         border-radius: 10px;
+        transition: all 01s;
+    }
+    .header__lista li a:hover{
+        background-color: #b37d22;
+        color: #78180d;
+        padding:15px ;
     }
 
     .main {
@@ -419,8 +424,12 @@ header{
         width: 100px;
         background-color: #b37d22;
         cursor: pointer;
+        transition: all 01s ease-out;
     }
-    
+    .boton:hover{
+        padding: 5px;
+        background-color: #78180d;
+    }
    /*css canciones*/
 
     .header__fondo {
@@ -445,9 +454,9 @@ header{
     
     
     .tabla {
-        margin-top: 50px;
         height: 220px;
         width: 500px;
+        margin-bottom: 50px;
         color: #b37d22;
         border: 10px;
         background-color: #030303;
