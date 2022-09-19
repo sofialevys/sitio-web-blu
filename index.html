@@ -4,46 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>INICIO</title>
+    <title>Inicio</title>
 </head>
-<body>
-    <section class="row">
-        <section class="col-12">
-          <header class="p-4 text-center">
-            <a href="./index.html">
-                <img class="header__logo" src="./imagenes/logo.jpeg" alt="Logo de la pagina" width="150px" height="150px">
-            </a>
-            <h1 class=" fw-bold header__titulo">Blu y sus 13</h1>
-            <nav>
-                <ul class="nav justify-content-center header__lista">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./paginas/tips.html">Tips</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./paginas/galeria.html">Galeria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./paginas/canciones.html">Canciones</a>
-                    </li>
-                  </ul>
-            </nav>
-         </header>
-        </section>
-    </section>
-    <main class="row main">
-        <section class="col-sm-12 col-md-6 col-lg-3">
-            <iframe class="main__video" width="300" height="300" src="https://www.youtube.com/embed/ZxxcS3UgkFE" title="Por esos lados - Blü x Noria" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h2 class=" p-4 main__titulo">Sobre mi</h2>
-            <p class="center main__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque corporis eveniet distinctio qui sapiente, laborum veniam eaque repellat iusto dicta itaque quae omnis, autem, ipsum fugiat amet odio eum?</p>
-        </section>
+<body class="grid">
+    <header>
+        <a href="./index.html">
+            <img class="header__logo" src="./imagenes/logo.jpeg" alt="Logo de la pagina" width="150px" height="150px">
+        </a>
+        <h1 class="header__titulo">Blu y sus 13</h1>
+        <nav>
+            <ul class="header__lista">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./paginas/galeria.html">Galeria</a></li>
+                <li><a href="./paginas/tips.html">Tips</a></li>
+                <li><a href="./paginas/canciones.html">Canciones</a></li>
+                <li><a href="./paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <iframe class="main__video" src="https://www.youtube.com/embed/ZxxcS3UgkFE" title="Por esos lados - Blü x Noria" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h class="main__titulo">Sobre mi</h2>
+        <p class="main__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque corporis eveniet distinctio qui sapiente, laborum veniam eaque repellat iusto dicta itaque quae omnis, autem, ipsum fugiat amet odio eum?</p>
     </main>
     <footer class="footer">
         <ul class="footer__links">
@@ -74,6 +57,5 @@
             </li>
         </ul>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
