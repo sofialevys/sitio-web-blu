@@ -1,1 +1,47 @@
-/*# sourceMappingURL=styles.css.map */
+header {
+  grid-area: cabecera;
+  background-image: url(../imagenes/4.jpeg);
+  background-size: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+header a .header__logo {
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+}
+header .header__titulo {
+  font-size: 30px;
+  font-family: curvilingus;
+  color: #b37d22;
+  margin-top: 10px;
+  text-align: center;
+}
+header header nav .header__lista {
+  list-style-type: none;
+  width: 300px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+header header nav .header__lista .header__lista li a {
+  height: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: #b37d22;
+  font-family: keepontruckin;
+  font-size: 15px;
+  font-weight: lighter;
+  text-decoration: none;
+  border: 2px solid;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-image: url(../imagenes/2.jpeg);
+  background-size: cover;
+  border-radius: 10px;
+}/*# sourceMappingURL=styles.css.map */
