@@ -66,15 +66,8 @@ header{
          }
     }
 }
-@font-face {
-    font-family: curvilingus;
-    src: url(../fonts/curvilingus/Curvilingus.otf);
-}
-@font-face {
-    font-family: keepontruckin;
-    src: url(../fonts/keep_on_truckin_fw/KeeponTruckin.ttf);
-}
-    @media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 1200px) {
         .grilla {
             grid-template-areas: 
             "cabecera cabecera"
@@ -129,6 +122,12 @@ header{
                     background-size: cover;
                     border-radius: 10px;
                     transition: all 01s;
+
+                    &:hover{
+                        background-color: #b37d22;
+                        color: #78180d;
+                        padding:15px ;
+                    }
                 }
             }
          }
