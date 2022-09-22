@@ -66,7 +66,14 @@ header{
          }
     }
 }
-
+@font-face {
+    font-family: curvilingus;
+    src: url(../fonts/curvilingus/Curvilingus.otf);
+}
+@font-face {
+    font-family: keepontruckin;
+    src: url(../fonts/keep_on_truckin_fw/KeeponTruckin.ttf);
+}
     @media screen and (min-width: 1200px) {
         .grilla {
             grid-template-areas: 
@@ -88,7 +95,7 @@ header{
 
             .header__logo{
                 border-radius: 50px;
-             height: 150px;
+                height: 150px;
                 width: 150px;
             }
 
