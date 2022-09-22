@@ -1,3 +1,11 @@
+.grid {
+  display: grid;
+  grid-template-areas: "cabecera" "main" "pieDepagina";
+  grid-template-rows: 3, 1fr;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+
 header {
   grid-area: cabecera;
   background-image: url(../imagenes/4.jpeg);
@@ -7,7 +15,7 @@ header {
   justify-content: start;
   flex-wrap: wrap;
 }
-header a .header__logo {
+header .header__logo {
   border-radius: 50px;
   height: 100px;
   width: 100px;
@@ -19,7 +27,7 @@ header .header__titulo {
   margin-top: 10px;
   text-align: center;
 }
-header header nav .header__lista {
+header .header__lista li {
   list-style-type: none;
   width: 300px;
   height: 100px;
@@ -29,7 +37,7 @@ header header nav .header__lista {
   justify-content: center;
   flex-wrap: wrap;
 }
-header header nav .header__lista .header__lista li a {
+header .header__lista li .header__lista li a {
   height: 10px;
   margin-right: 10px;
   margin-top: 10px;
@@ -44,4 +52,73 @@ header header nav .header__lista .header__lista li a {
   background-image: url(../imagenes/2.jpeg);
   background-size: cover;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .grilla {
+    grid-template-areas: "cabecera cabecera" "main main" "piDePagina pieDePagina";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+  }
+  header {
+    grid-area: cabecera;
+    background-image: url(../imagenes/7.jpeg);
+    background-size: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  header .header__logo {
+    border-radius: 50px;
+    height: 150px;
+    width: 150px;
+  }
+  header .header__titulo {
+    font-size: 80px;
+    font-family: curvilingus;
+    color: #78180d;
+    margin-top: 10px;
+    text-align: center;
+  }
+  header ul {
+    list-style-type: none;
+    display: flex;
+    width: 600px;
+    margin-top: 80px;
+  }
+  header ul li {
+    height: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #b37d22;
+    font-family: keepontruckin;
+    font-size: 25px;
+    font-weight: lighter;
+    text-decoration: none;
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-image: url(../imagenes/2.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    transition: all 1s;
+  }
+  header ul li a {
+    height: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #b37d22;
+    font-family: keepontruckin;
+    font-size: 25px;
+    font-weight: lighter;
+    text-decoration: none;
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-image: url(../imagenes/2.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    transition: all 1s;
+  }
 }/*# sourceMappingURL=styles.css.map */

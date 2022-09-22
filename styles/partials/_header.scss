@@ -1,3 +1,13 @@
+.grid {
+    display: grid;
+    grid-template-areas:
+    "cabecera"
+    "main"
+    "pieDepagina";
+    grid-template-rows: (3, 1fr);
+    grid-template-columns: 1fr;
+    height: 100vh;   
+}
 
 header{
    grid-area: cabecera;
@@ -8,22 +18,20 @@ header{
    justify-content: start;
    flex-wrap: wrap;
 
-   a{
-    .header__logo{
+   .header__logo{
         border-radius: 50px;
         height:100px;
-        width: 100px;
-    }
-   }
-
-   .header__titulo{
+        width: 100px;}
+    
+    .header__titulo{
         font-size: 30px;
         font-family: curvilingus;
         color: #b37d22;
         margin-top: 10px;
         text-align: center;
-   }
-    .header__lista{
+    }
+
+    ul{
         list-style-type: none;
         width: 300px;
         height: 100px;
@@ -32,8 +40,8 @@ header{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-
-        .header__lista li a{
+        
+        li a {
             height: 10px;
             margin-right: 10px;
             margin-top: 10px;
@@ -48,658 +56,69 @@ header{
             background-image: url(../imagenes/2.jpeg);
             background-size: cover;
             border-radius: 10px;
-        }
-    }
-   }
-
-}
-
-
-
-
-
- /*
-.main {
-    grid-area: main;
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.main__video {
-    margin-top: 20px;
-    height: 200px;
-    width: 300px;
-}
-
-.main__titulo {
-    font-family: curvilingus;
-    color: #dca015;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-
-}
-
-.main__parrafo {
-    font-family: keepontruckin;
-    color: #b37d22;
-    font-size: 15px;
-    font-weight: lighter;
-    width: 250px;
-    text-decoration: none;
-
-}
-
-
-
-.footer {
-    grid-area: pieDepagina;
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 200px;
-}
-
-.footer__links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 30px;
-    list-style-type: none;
-
-}
-
-/*css galeria*/
-
-/*.header__gal {
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 400px;
-}
-
-    
-.main--galeria {
-    height: 1500px;
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 400px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;  
-}
-
-
-.fotoUno {
-    border-radius: 10px;
-    border: 03px solid;
-    border-color: #060606;
-    height: 140px;
-    width: 140px;
-}
-
-.footer__gal {
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style-type: none;
-}
-
-/*css canciones*/
-
-/*.header__fondo {
-    background-image:url(../imagenes/3.jpeg);
-}
-
-.header__titulo--dis {
-    color: #b37d22;
-    font-size: 30px;
-    font-family: curvilingus;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.main--canciones{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-image: url(../imagenes/3.jpeg);
-    background-size: 400px;
-}
-
-
-.tabla {
-    position: relative;
-    top:50px;
-    height: 200px;
-    width: 500px;
-    color: #b37d22;
-    border: 10px;
-    background-color: #030303;
-    font-family: keepontruckin;
-    border-radius: 10px;
-    border-color: #b37d22;
-}
-
-.footer--can{
-    background-image: url(../imagenes/3.jpeg);
-    background-size: 400px;
-    margin-top: 50px;
-
-}
-
-/*css contacto*/
-
-/*.main--cont {
-    height: 800px;
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 200px;
-
-}
-
-.texto__cont {
-    font-family: curvilingus;
-    color: #b37d22;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: underline;
-    width: 300px;
-}
-
-.formulario {
-    display: flex;
-    flex-direction: column;
-    align-items:center ;
-    margin-left: 15px;
-    margin-top: 30px;
-    width: 300px;
-    color: #b37d22;
-    text-align: center;
-    font-family: keepontruckin;
-    font-size: 15px;
-    
-}
-
-.boton {
-    border-radius: 10px;
-    font-size: 15px;
-    width: 100px;
-    background-color: #b37d22;
-    cursor: pointer;
-}
-
-/*css tips*/
-
-/*.main--tips{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 400px;
-   }
-
-.footer__tips {
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 400px;
-}
-
-@font-face {
-    font-family: curvilingus;
-    src: url(../fonts/curvilingus/Curvilingus.otf);
-}
-@font-face {
-    font-family: keepontruckin;
-    src: url(../fonts/keep_on_truckin_fw/KeeponTruckin.ttf);
-}
-
-@media screen and (min-width: 1200px) {
-    .grilla {
-        grid-template-areas: 
-        "cabecera cabecera"
-        "main main"
-        "piDePagina pieDePagina";
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        height: 100vh;
-      }
-
-    header {
-        grid-area: cabecera;
-        background-image: url(../imagenes/7.jpeg);
-        background-size: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .header__logo {
-        border-radius: 50px;
-        height: 150px;
-        width: 150px;
-    }
-
-    .header__titulo{
-        font-size: 80px;
-         font-family: curvilingus;
-         color: #78180d;
-         margin-top: 10px;
-         text-align: center;
-     }
-
-    .header__lista{
-        list-style-type: none;
-        display: flex;
-        width: 600px;
-        margin-top: 80px;
-    }
-    .header__lista li a{
-        height: 10px;
-        margin-right: 10px;
-        margin-top: 10px;
-        color: #b37d22;
-        font-family: keepontruckin;
-        font-size: 25px;
-        font-weight: lighter;
-        text-decoration: none;
-        border: 02px solid;
-        padding: 10px;
-        margin-bottom: 10px;
-        background-image: url(../imagenes/2.jpeg);
-        background-size: cover;
-        border-radius: 10px;
-        transition: all 01s;
-    }
-    .header__lista li a:hover{
-        background-color: #b37d22;
-        color: #78180d;
-        padding:15px ;
-    }
-
-    .main {
-        grid-area: main;
-        background-image: url(../imagenes/7.jpeg);
-        background-size: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .main__video {
-        height: 400px;
-        width: 600px;
-    }
-
-    .main__titulo {
-        font-family: curvilingus;
-        color: #78180d;
-        font-size: 50px;
-        font-weight: bold;
-        text-align: center;
-    
-    }
-    
-    .main__parrafo {
-        font-family: keepontruckin;
-        color: #b37d22;
-        font-size: 30px;
-        font-weight: lighter;
-        text-decoration: none;
-        width: 800px;
-    
-    }
-    
-    .main__video {
-        height: 400px;
-        width: 600px;
-    }
-    .footer {
-        grid-area: pieDepagina;
-        background-image: url(../imagenes/7.jpeg);
-        background-size: 400px;
-    }
-
-    .fotoUno {
-        border-radius: 10px;
-        border: 03px solid;
-        border-color: #490707;
-        height: 300px;
-        width: 300px;
-   }
-
-   .fotoUno:hover {
-        transition:all 1s ease-in-out;
-        height: 400px;
-        width: 400px;
-        border-color: #b37d22;
-   }
-
-   /*css cont*/
-
-   /* .main--cont {
-        height: 800px;
-        background-image: url(../imagenes/4.jpeg);
-        background-size: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    
-    }
-    
-    .texto__cont {
-        font-family: curvilingus;
-        color: #b37d22;
-        font-size: 30px;
-        text-align: center;
-        text-decoration: underline;
-        width: 600px;
-    }
-    
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        align-items:center ;
-        width: 300px;
-        color: #b37d22;
-        text-align: center;
-        font-family: keepontruckin;
-        font-size: 20px;
-        
-    }
-    
-    
-    .boton {
-        border-radius: 10px;
-        font-size: 15px;
-        width: 100px;
-        background-color: #b37d22;
-        cursor: pointer;
-        transition: all 01s ease-out;
-    }
-    .boton:hover{
-        padding: 5px;
-        background-color: #78180d;
-    }
-    
-   /*css canciones*/
-
-   /* .header__fondo {
-        background-image:url(../imagenes/3.jpeg);
-    }
-    
-    .header__titulo--dis {
-        color: #b37d22;
-        font-size: 80px;
-        font-family: curvilingus;
-        margin-top: 10px;
-        text-align: center;
-    }
-    
-    .main--canciones{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        background-image: url(../imagenes/3.jpeg);
-        background-size: 400px;
-    }
-    
-    
-    .tabla {
-        height: 220px;
-        width: 500px;
-        margin-bottom: 50px;
-        color: #b37d22;
-        border: 10px;
-        background-color: #030303;
-        font-family: keepontruckin;
-        border-radius: 10px;
-        border-color: #b37d22;
-    }
-    
-    .footer--can{
-        margin-top: 0;
-        background-image: url(../imagenes/3.jpeg);
-        background-size: 400px;
-    
-    }
-
-
-    
-    /*css tips*/
-    
-    /*.main--tips{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../imagenes/4.jpeg);
-        background-size: 400px;
-       }
-
-    .footer__tips {
-        background-image: url(../imagenes/4.jpeg);
-        background-size: 400px;
-    }
-     
-
-
-     
-
-
-  
-@media screen and (min-width: 400px) and (max-width: 1200px)  {
-    .grilla {
-      grid-template-areas: 
-      "cabecera cabecera"
-      "main main"
-      "piDePagina pieDePagina";
-      grid-template-rows: repeat(3, 1fr);
-      grid-template-columns: repeat(2, 1fr);
-      height: 100vh;
-    }
-
-    header{
-        grid-area: cabecera;
-        background-image: url(../imagenes/2.jpeg);
-        background-size: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-  
-    .header__logo {
-        border-radius: 50px;
-        height: 150px;
-        width: 150px;
-    }
-    .header__titulo {
-         font-size: 80px;
-         font-family: curvilingus;
-         color: #78180d;
-         margin-top: 10px;
-         text-align: center;
-    }
-
-    .header__lista{
-        list-style-type: none;
-        display: flex;
-        width:400px;
-        margin-top: 80px;
-    }
-    
-    .header__lista li a{
-        height: 10px;
-        margin-right: 10px;
-        margin-top: 10px;
-        color: #b37d22;
-        font-family: keepontruckin;
-        font-size: 25px;
-        font-weight: lighter;
-        text-decoration: none;
-        border: 02px solid;
-        padding: 10px;
-        margin-bottom: 10px;
-        background-image: url(../imagenes/2.jpeg);
-        background-size: cover;
-        border-radius: 10px;
-    }
-
-    .main {
-        grid-area: main;
-        background-image: url(../imagenes/2.jpeg);
-        background-size: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .main__video {
-        height: 400px;
-        width: 600px;
-    }
-
-    .main__titulo {
-        font-family: curvilingus;
-        color: #78180d;
-        font-size: 50px;
-        font-weight: bold;
-        text-align: center;
-    
-    }
-    
-    .main__parrafo {
-        font-family: keepontruckin;
-        color: #b37d22;
-        font-size: 30px;
-        font-weight: lighter;
-        text-decoration: none;
-        width: 800px;
-    
-    }
-    
-    .footer {
-        grid-area: pieDepagina;
-        background-image: url(../imagenes/2.jpeg);
-        background-size: 400px;
-    }
-
-    .fotoUno {
-        border-radius: 10px;
-        border: 03px solid;
-        border-color: #060606;
-        height: 250px;
-        width: 250px;
-   }
-   
-   /*css cont*/
-
-
-    /*.main--cont {
-        height: 800px;  
-        background-image: url(../imagenes/4.jpeg);
-        background-size: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .texto__cont {
-        font-family: curvilingus;
-        color: #b37d22;
-        font-size: 30px;
-        text-align: center;
-        text-decoration: underline;
-        width: 600px;
-    
-    }
-    
-    .formulario {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items:center ;
-        width: 300px;
-        color: #b37d22;
-        text-align: center;
-        font-family: keepontruckin;
-        font-size: 20px;
-        
-    }
-    
-    .boton {
-        border-radius: 10px;
-        font-size: 15px;
-        width: 100px;
-        background-color: #b37d22;
-        cursor: pointer;
-    }
-     /*css canciones*/
-
-   /* .header__fondo {
-        background-image:url(../imagenes/3.jpeg);
-    }
-    
-    .header__titulo--dis {
-        color: #b37d22;
-        font-size: 80px;
-        font-family: curvilingus;
-        margin-top: 10px;
-        text-align: center;
-    }
-    
-    .main--canciones{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        background-image: url(../imagenes/3.jpeg);
-        background-size: 400px;
-    }
-    
-    
-    .tabla {
-        position: relative;
-        top:50px;
-        height: 200px;
-        width: 500px;
-        color: #b37d22;
-        border: 10px;
-        background-color: #030303;
-        font-family: keepontruckin;
-        border-radius: 10px;
-        border-color: #b37d22;
-    }
-    
-    .footer--can{
-        background-image: url(../imagenes/3.jpeg);
-        background-size: 400px;
-    }
-
-
-
-    /*css tips*/
-
-    /*.main--tips{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../imagenes/4.jpeg);
-        background-size: 400px;
-       }
-
-    .footer__tips {
-        background-image: url(../imagenes/4.jpeg);
-        background-size: 400px;
+         }
     }
 }
-         
 
+    @media screen and (min-width: 1200px) {
+        .grilla {
+            grid-template-areas: 
+            "cabecera cabecera"
+            "main main"
+            "piDePagina pieDePagina";
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            height: 100vh;
+          }
+    
+        header {
+            grid-area: cabecera;
+            background-image: url(../imagenes/7.jpeg);
+            background-size: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
 
+            .header__logo{
+                border-radius: 50px;
+             height: 150px;
+                width: 150px;
+            }
 
+            .header__titulo{
+                font-size: 80px;
+                 font-family: curvilingus;
+                 color: #78180d;
+                 margin-top: 10px;
+                 text-align: center;
+             }
 
+            ul{
+                list-style-type: none;
+                display: flex;
+                width: 600px;
+                margin-top: 80px;
+                
+                 li{
+                    height: 10px;
+                    margin-right: 10px;
+                    margin-top: 10px;
+                    color: #b37d22;
+                    font-family: keepontruckin;
+                    font-size: 25px;
+                    font-weight: lighter;
+                    text-decoration: none;
+                    border: 02px solid;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    background-image: url(../imagenes/2.jpeg);
+                    background-size: cover;
+                    border-radius: 10px;
+                    transition: all 01s;
+                }
+            }
+         }
+    
+    }
 
+    
