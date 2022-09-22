@@ -1,0 +1,22 @@
+.footer {
+    grid-area: pieDepagina;
+    background-image: url(../imagenes/4.jpeg);
+    background-size: 200px;
+
+
+    .footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+    list-style-type: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        grid-area: pieDepagina;
+        background-image: url(../imagenes/7.jpeg);
+        background-size: 400px;
+    }
+}
