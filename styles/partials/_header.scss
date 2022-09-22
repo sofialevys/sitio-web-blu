@@ -32,16 +32,16 @@ header{
     }
 
     ul{
-        list-style-type: none;
-        width: 300px;
-        height: 100px;
-        margin-top: 20px;
-        margin-left: 20px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        
-        li a {
+
+        li {
+            list-style-type: none;
+            width: 300px;
+            height: 100px;
+            margin-top: 20px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             height: 10px;
             margin-right: 10px;
             margin-top: 10px;
@@ -56,6 +56,13 @@ header{
             background-image: url(../imagenes/2.jpeg);
             background-size: cover;
             border-radius: 10px;
+
+            a{
+                color: #b37d22;
+                font-family: keepontruckin;
+                font-size: 15px;
+                font-weight: lighter;
+            }
          }
     }
 }
