@@ -43,7 +43,7 @@
             justify-content: center;
             flex-wrap: wrap;
 
-            .header__lista li a {
+            li a{
                 height: 10px;
                 margin-right: 10px;
                 margin-top: 10px;
@@ -112,7 +112,7 @@
                 margin-top: 80px
 
             }
-            li a{
+            .header__lista li a{
                 height: 10px;
                 margin-right: 10px;
                 margin-top: 10px;
@@ -141,4 +141,62 @@
 
     }
 
+}
+
+@media screen and (min-width: 400px) and (max-width: 1200px)  {
+    .grid{ 
+        grid-template-areas: 
+        "cabecera "
+        "main main"
+        "piDePagina pieDePagina";
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        height: 100vh;
+
+        header{
+            grid-area: cabecera;
+            background-image: url(../imagenes/2.jpeg);
+            background-size: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+      
+        .header__logo {
+            border-radius: 50px;
+            height: 150px;
+            width: 150px;
+        }
+        .header__titulo {
+             font-size: 80px;
+             font-family: curvilingus;
+             color: #78180d;
+             margin-top: 10px;
+             text-align: center;
+        }
+    
+        .header__lista{
+            list-style-type: none;
+            display: flex;
+            width:400px;
+            margin-top: 80px;
+        }
+        
+        .header__lista li a{
+            height: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            color: #b37d22;
+            font-family: keepontruckin;
+            font-size: 25px;
+            font-weight: lighter;
+            text-decoration: none;
+            border: 02px solid;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-image: url(../imagenes/2.jpeg);
+            background-size: cover;
+            border-radius: 10px;
+        }
+    }
 }
