@@ -35,7 +35,7 @@
 
         .header__lista {
             list-style-type: none;
-            width: 300px;
+            width: 225px;
             height: 100px;
             margin-top: 20px;
             margin-left: 20px;
@@ -67,7 +67,7 @@
     .header__fondo {
         background-image:url(../imagenes/3.jpeg);
         .header__titulo--dis {
-            color: #b37d22;
+            color: map-get ($colores, tituloUno);
             font-size: 30px;
             font-family: curvilingus;
             margin-top: 10px;
@@ -140,7 +140,7 @@
                 background-image: url(../imagenes/2.jpeg);
                 background-size: cover;
                 border-radius: 10px;
-                transition: all 01s;
+                transition: $transitions;
                 &:hover{
                         background-color: #b37d22;
                         color: #78180d;
@@ -155,6 +155,9 @@
         .header__gal {
             background-image: url(../imagenes/4.jpeg);
             background-size: 400px;
+            .header__titulo{
+                color: map-get($colores, tituloUno);
+            }
         }
 
         .header__fondo {

@@ -182,7 +182,7 @@
                 border-color: #0c0c0c;
                 height: 300px;
                 width: 300px;
-                transition:all 1s ease-in-out;
+                transition:$transitions;
                 &:hover { 
                     height: 350px;
                     width: 350px;
