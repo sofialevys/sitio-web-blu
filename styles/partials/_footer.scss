@@ -31,6 +31,17 @@
         justify-content: center;
         list-style-type: none;
     }
+    .footer--can{
+        background-image: url(../imagenes/3.jpeg);
+        background-size: 400px;
+        margin-top: 50px;
+    
+    }
+    
+    .footer__tips {
+        background-image: url(../imagenes/4.jpeg);
+        background-size: 400px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -48,6 +59,12 @@
             background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
         }
+        .footer--can{
+            margin-top: 0;
+            background-image: url(../imagenes/3.jpeg);
+            background-size: 400px;
+        
+        }
     }
 }
 
@@ -59,10 +76,10 @@
         background-size: 400px;
     }
 
-    .footer {
-        grid-area: pieDepagina;
-        background-image: url(../imagenes/2.jpeg);
+    .footer--can{
+        background-image: url(../imagenes/3.jpeg);
         background-size: 400px;
     }
+
 
 }

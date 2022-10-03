@@ -274,6 +274,46 @@
   border-radius: 10px;
   border-color: #b37d22;
 }
+.grid .main--cont {
+  height: 800px;
+  background-image: url(../imagenes/4.jpeg);
+  background-size: 200px;
+}
+.grid .main--cont .texto__cont {
+  font-family: curvilingus;
+  color: #b37d22;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+  width: 300px;
+}
+.grid .main--cont .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: 30px;
+  width: 300px;
+  color: #b37d22;
+  text-align: center;
+  font-family: keepontruckin;
+  font-size: 15px;
+}
+.grid .main--cont .boton {
+  border-radius: 10px;
+  font-size: 15px;
+  width: 100px;
+  background-color: #b37d22;
+  cursor: pointer;
+}
+.grid .main--tips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imagenes/4.jpeg);
+  background-size: 400px;
+}
 
 @media screen and (min-width: 1200px) {
   .grid {
@@ -345,6 +385,53 @@
     border-radius: 10px;
     border-color: #b37d22;
   }
+  .grid .main--cont {
+    height: 800px;
+    background-image: url(../imagenes/4.jpeg);
+    background-size: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid .main--cont .texto__cont {
+    font-family: curvilingus;
+    color: #b37d22;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    width: 600px;
+  }
+  .grid .main--cont .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    color: #b37d22;
+    text-align: center;
+    font-family: keepontruckin;
+    font-size: 20px;
+  }
+  .grid .main--cont .boton {
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100px;
+    background-color: #b37d22;
+    cursor: pointer;
+    transition: all 1s ease-out;
+  }
+  .grid .main--cont .boton:hover {
+    padding: 5px;
+    background-color: #78180d;
+  }
+  .grid .main--tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagenes/4.jpeg);
+    background-size: 400px;
+  }
 }
 @media screen and (min-width: 400px) and (max-width: 1200px) {
   .grid {
@@ -407,6 +494,41 @@
     border-radius: 10px;
     border-color: #b37d22;
   }
+  .grid .main--cont {
+    height: 800px;
+    background-image: url(../imagenes/4.jpeg);
+    background-size: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid .main--cont .texto__cont {
+    font-family: curvilingus;
+    color: #b37d22;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    width: 600px;
+  }
+  .grid .main--cont .formulario {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    color: #b37d22;
+    text-align: center;
+    font-family: keepontruckin;
+    font-size: 20px;
+  }
+  .grid .main--cont .boton {
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100px;
+    background-color: #b37d22;
+    cursor: pointer;
+  }
 }
 .grid {
   display: grid;
@@ -435,6 +557,15 @@
   justify-content: center;
   list-style-type: none;
 }
+.grid .footer--can {
+  background-image: url(../imagenes/3.jpeg);
+  background-size: 400px;
+  margin-top: 50px;
+}
+.grid .footer__tips {
+  background-image: url(../imagenes/4.jpeg);
+  background-size: 400px;
+}
 
 @media screen and (min-width: 1200px) {
   .grid {
@@ -448,226 +579,11 @@
     background-image: url(../imagenes/7.jpeg);
     background-size: 400px;
   }
-}
-@media screen and (min-width: 400px) and (max-width: 1200px) {
-  .footer {
-    grid-area: pieDepagina;
-    background-image: url(../imagenes/2.jpeg);
-    background-size: 400px;
-  }
-  .footer {
-    grid-area: pieDepagina;
-    background-image: url(../imagenes/2.jpeg);
-    background-size: 400px;
-  }
-}
-/*css galeria*/
-.main--galeria {
-  height: 1500px;
-  background-image: url(../imagenes/4.jpeg);
-  background-size: 400px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-}
-
-.fotoUno {
-  border-radius: 10px;
-  border: 3px solid;
-  border-color: #060606;
-  height: 140px;
-  width: 140px;
-}
-
-.footer__gal {
-  background-image: url(../imagenes/4.jpeg);
-  background-size: 400px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style-type: none;
-}
-
-/*css canciones*/
-.header__fondo {
-  background-image: url(../imagenes/3.jpeg);
-}
-
-.header__titulo--dis {
-  color: #b37d22;
-  font-size: 30px;
-  font-family: curvilingus;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.main--canciones {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-image: url(../imagenes/3.jpeg);
-  background-size: 400px;
-}
-
-.tabla {
-  position: relative;
-  top: 50px;
-  height: 200px;
-  width: 500px;
-  color: #b37d22;
-  border: 10px;
-  background-color: #030303;
-  font-family: keepontruckin;
-  border-radius: 10px;
-  border-color: #b37d22;
-}
-
-.footer--can {
-  background-image: url(../imagenes/3.jpeg);
-  background-size: 400px;
-  margin-top: 50px;
-}
-
-/*css contacto*/
-.main--cont {
-  height: 800px;
-  background-image: url(../imagenes/4.jpeg);
-  background-size: 200px;
-}
-
-.texto__cont {
-  font-family: curvilingus;
-  color: #b37d22;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: underline;
-  width: 300px;
-}
-
-.formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 15px;
-  margin-top: 30px;
-  width: 300px;
-  color: #b37d22;
-  text-align: center;
-  font-family: keepontruckin;
-  font-size: 15px;
-}
-
-.boton {
-  border-radius: 10px;
-  font-size: 15px;
-  width: 100px;
-  background-color: #b37d22;
-  cursor: pointer;
-}
-
-/*css tips*/
-.main--tips {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../imagenes/4.jpeg);
-  background-size: 400px;
-}
-
-.footer__tips {
-  background-image: url(../imagenes/4.jpeg);
-  background-size: 400px;
-}
-
-@media screen and (min-width: 1200px) {
-  /*css cont*/
-  .main--cont {
-    height: 800px;
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .texto__cont {
-    font-family: curvilingus;
-    color: #b37d22;
-    font-size: 30px;
-    text-align: center;
-    text-decoration: underline;
-    width: 600px;
-  }
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    color: #b37d22;
-    text-align: center;
-    font-family: keepontruckin;
-    font-size: 20px;
-  }
-  .boton {
-    border-radius: 10px;
-    font-size: 15px;
-    width: 100px;
-    background-color: #b37d22;
-    cursor: pointer;
-    transition: all 1s ease-out;
-  }
-  .boton:hover {
-    padding: 5px;
-    background-color: #78180d;
-  }
-  /*css canciones*/
-  .header__fondo {
-    background-image: url(../imagenes/3.jpeg);
-  }
-  .header__titulo--dis {
-    color: #b37d22;
-    font-size: 80px;
-    font-family: curvilingus;
-    margin-top: 10px;
-    text-align: center;
-  }
-  .main--canciones {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-image: url(../imagenes/3.jpeg);
-    background-size: 400px;
-  }
-  .tabla {
-    height: 220px;
-    width: 500px;
-    margin-bottom: 50px;
-    color: #b37d22;
-    border: 10px;
-    background-color: #030303;
-    font-family: keepontruckin;
-    border-radius: 10px;
-    border-color: #b37d22;
-  }
-  .footer--can {
+  .grid .footer--can {
     margin-top: 0;
     background-image: url(../imagenes/3.jpeg);
     background-size: 400px;
   }
-  /*css tips*/
-  .main--tips {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 400px;
-  }
-  .footer__tips {
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 400px;
-  }
 }
 @media screen and (min-width: 400px) and (max-width: 1200px) {
   .footer {
@@ -675,94 +591,8 @@
     background-image: url(../imagenes/2.jpeg);
     background-size: 400px;
   }
-  .fotoUno {
-    border-radius: 10px;
-    border: 3px solid;
-    border-color: #060606;
-    height: 250px;
-    width: 250px;
-  }
-  /*css cont*/
-  .main--cont {
-    height: 800px;
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .texto__cont {
-    font-family: curvilingus;
-    color: #b37d22;
-    font-size: 30px;
-    text-align: center;
-    text-decoration: underline;
-    width: 600px;
-  }
-  .formulario {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    color: #b37d22;
-    text-align: center;
-    font-family: keepontruckin;
-    font-size: 20px;
-  }
-  .boton {
-    border-radius: 10px;
-    font-size: 15px;
-    width: 100px;
-    background-color: #b37d22;
-    cursor: pointer;
-  }
-  /*css canciones*/
-  .header__fondo {
-    background-image: url(../imagenes/3.jpeg);
-  }
-  .header__titulo--dis {
-    color: #b37d22;
-    font-size: 80px;
-    font-family: curvilingus;
-    margin-top: 10px;
-    text-align: center;
-  }
-  .main--canciones {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-image: url(../imagenes/3.jpeg);
-    background-size: 400px;
-  }
-  .tabla {
-    position: relative;
-    top: 50px;
-    height: 200px;
-    width: 500px;
-    color: #b37d22;
-    border: 10px;
-    background-color: #030303;
-    font-family: keepontruckin;
-    border-radius: 10px;
-    border-color: #b37d22;
-  }
   .footer--can {
     background-image: url(../imagenes/3.jpeg);
-    background-size: 400px;
-  }
-  /*css tips*/
-  .main--tips {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 400px;
-  }
-  .footer__tips {
-    background-image: url(../imagenes/4.jpeg);
     background-size: 400px;
   }
 }/*# sourceMappingURL=styles.css.map */

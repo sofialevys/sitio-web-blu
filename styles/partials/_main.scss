@@ -77,6 +77,51 @@
             border-color: #b37d22;
         }
     } 
+
+    .main--cont {
+        height: 800px;
+        background-image: url(../imagenes/4.jpeg);
+        background-size: 200px;
+        .texto__cont {
+            font-family: curvilingus;
+            color: #b37d22;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: underline;
+            width: 300px;
+        }
+        
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            align-items:center ;
+            margin-left: 15px;
+            margin-top: 30px;
+            width: 300px;
+            color: #b37d22;
+            text-align: center;
+            font-family: keepontruckin;
+            font-size: 15px;
+            
+        }
+        
+        .boton {
+            border-radius: 10px;
+            font-size: 15px;
+            width: 100px;
+            background-color: #b37d22;
+            cursor: pointer;
+        }
+    
+    }
+    .main--tips{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../imagenes/4.jpeg);
+        background-size: 400px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -165,6 +210,57 @@
                 border-color: #b37d22;
             }
         }
+        .main--cont {
+            height: 800px;
+            background-image: url(../imagenes/4.jpeg);
+            background-size: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .texto__cont {
+                font-family: curvilingus;
+                color: #b37d22;
+                font-size: 30px;
+                text-align: center;
+                text-decoration: underline;
+                width: 600px;
+            }
+            
+            .formulario {
+                display: flex;
+                flex-direction: column;
+                align-items:center ;
+                width: 300px;
+                color: #b37d22;
+                text-align: center;
+                font-family: keepontruckin;
+                font-size: 20px;
+                
+            }
+            
+            
+            .boton {
+                border-radius: 10px;
+                font-size: 15px;
+                width: 100px;
+                background-color: #b37d22;
+                cursor: pointer;
+                transition: all 01s ease-out;
+                &:hover{
+                    padding: 5px;
+                    background-color: #78180d;
+                }
+            }
+        }
+        .main--tips{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../imagenes/4.jpeg);
+            background-size: 400px;
+        }
     }
 }
 
@@ -241,6 +337,45 @@
                 font-family: keepontruckin;
                 border-radius: 10px;
                 border-color: #b37d22;
+            }
+        }
+        .main--cont {
+            height: 800px;  
+            background-image: url(../imagenes/4.jpeg);
+            background-size: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .texto__cont {
+                font-family: curvilingus;
+                color: #b37d22;
+                font-size: 30px;
+                text-align: center;
+                text-decoration: underline;
+                width: 600px;
+            
+            }
+            
+            .formulario {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items:center ;
+                width: 300px;
+                color: #b37d22;
+                text-align: center;
+                font-family: keepontruckin;
+                font-size: 20px;
+                
+            }
+            
+            .boton {
+                border-radius: 10px;
+                font-size: 15px;
+                width: 100px;
+                background-color: #b37d22;
+                cursor: pointer;
             }
         }
     }  
