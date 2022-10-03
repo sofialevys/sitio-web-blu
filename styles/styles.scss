@@ -3,27 +3,12 @@
 @import "./partials/footer";
 
 
-.footer {
-    grid-area: pieDepagina;
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 200px;
-}
 
-.footer__links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 30px;
-    list-style-type: none;
 
-}
 
 /*css galeria*/
 
-.header__gal {
-    background-image: url(../imagenes/4.jpeg);
-    background-size: 400px;
-}
+
 
     
 .main--galeria {
@@ -156,34 +141,9 @@
 
 @media screen and (min-width: 1200px) {
    
-    
 
-
-   
-    
-    
 
     
-    .footer {
-        grid-area: pieDepagina;
-        background-image: url(../imagenes/7.jpeg);
-        background-size: 400px;
-    }
-
-    .fotoUno {
-        border-radius: 10px;
-        border: 03px solid;
-        border-color: #490707;
-        height: 300px;
-        width: 300px;
-   }
-
-   .fotoUno:hover {
-        transition:all 1s ease-in-out;
-        height: 400px;
-        width: 400px;
-        border-color: #b37d22;
-   }
 
    /*css cont*/
 
@@ -302,40 +262,6 @@
 @media screen and (min-width: 400px) and (max-width: 1200px)  {
     
     
-
-    .main {
-        grid-area: main;
-        background-image: url(../imagenes/2.jpeg);
-        background-size: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .main__video {
-        height: 400px;
-        width: 600px;
-    }
-
-    .main__titulo {
-        font-family: curvilingus;
-        color: #78180d;
-        font-size: 50px;
-        font-weight: bold;
-        text-align: center;
-    
-    }
-    
-    .main__parrafo {
-        font-family: keepontruckin;
-        color: #b37d22;
-        font-size: 30px;
-        font-weight: lighter;
-        text-decoration: none;
-        width: 800px;
-    
-    }
     
     .footer {
         grid-area: pieDepagina;
