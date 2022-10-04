@@ -182,7 +182,7 @@
                 border-color: #0c0c0c;
                 height: 300px;
                 width: 300px;
-                transition:$transitions;
+                transition: map-get($transitions, transitionUno);
                 &:hover { 
                     height: 350px;
                     width: 350px;
@@ -241,12 +241,12 @@
             
             
             .boton {
+                @include button($backColor:#b37d22);
                 border-radius: 10px;
                 font-size: 15px;
                 width: 100px;
-                background-color: #b37d22;
                 cursor: pointer;
-                transition: all 01s ease-out;
+                transition: map-get($transitions, tranistionUno);
                 &:hover{
                     padding: 5px;
                     background-color: #78180d;

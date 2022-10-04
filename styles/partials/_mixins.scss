@@ -1,0 +1,9 @@
+@mixin boton {
+    border-radius: 10px;
+    ont-size: 15px;
+                width: 100px;
+                cursor: pointer;
+                background-color: #b37d22;
+                transition: map-get($transitions, tranistionUno);
+    
+}

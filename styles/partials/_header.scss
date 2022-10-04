@@ -67,7 +67,7 @@
     .header__fondo {
         background-image:url(../imagenes/3.jpeg);
         .header__titulo--dis {
-            color: map-get ($colores, tituloUno);
+            color: #b37d22;
             font-size: 30px;
             font-family: curvilingus;
             margin-top: 10px;
@@ -113,7 +113,7 @@
             .header__titulo{
                 font-size: 80px;
                 font-family: curvilingus;
-                color: #78180d;
+                color:map-get($colores, tituloDos);
                 margin-top: 10px;
                 text-align: center;
             }
@@ -140,7 +140,7 @@
                 background-image: url(../imagenes/2.jpeg);
                 background-size: cover;
                 border-radius: 10px;
-                transition: $transitions;
+                transition: map-get($transitions, tranistionUno);
                 &:hover{
                         background-color: #b37d22;
                         color: #78180d;
