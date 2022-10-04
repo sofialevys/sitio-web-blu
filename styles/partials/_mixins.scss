@@ -1,0 +1,7 @@
+@mixin button ($Color) {
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100px;
+    cursor: pointer;
+    background-color:$backColor;
+}

@@ -1,3 +1,609 @@
-.grid {
-    
+.grid .footer .footer__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+.grid {
+  display: grid;
+  grid-template-areas: "cabecera" "main" "pieDepagina";
+  grid-template-rows: 3, 1fr;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+.grid header {
+  grid-area: cabecera;
+  background-image: url(../imagenes/4.jpeg);
+  background-size: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.grid header .header__logo {
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+}
+.grid header .header__titulo {
+  font-size: 30px;
+  font-family: curvilingus;
+  color: #b37d22;
+  margin-top: 10px;
+  text-align: center;
+}
+.grid header .header__lista {
+  list-style-type: none;
+  width: 225px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.grid header .header__lista li a {
+  height: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: #b37d22;
+  font-family: keepontruckin;
+  font-size: 15px;
+  font-weight: lighter;
+  text-decoration: none;
+  border: 2px solid;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-image: url(../imagenes/2.jpeg);
+  background-size: cover;
+  border-radius: 10px;
+}
+.grid .header__fondo {
+  background-image: url(../imagenes/3.jpeg);
+}
+.grid .header__fondo .header__titulo--dis {
+  color: #b37d22;
+  font-size: 30px;
+  font-family: curvilingus;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: curvilingus;
+  src: url(../fonts/curvilingus/Curvilingus.otf);
+}
+@font-face {
+  font-family: keepontruckin;
+  src: url(../fonts/keep_on_truckin_fw/KeeponTruckin.ttf);
+}
+@media screen and (min-width: 1200px) {
+  .grid {
+    grid-template-areas: "cabecera " "main main" "piDePagina pieDePagina";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .grid header {
+    grid-area: cabecera;
+    background-image: url(../imagenes/7.jpeg);
+    background-size: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .grid header .header__logo {
+    border-radius: 50px;
+    height: 150px;
+    width: 150px;
+  }
+  .grid header .header__titulo {
+    font-size: 80px;
+    font-family: curvilingus;
+    color: #78180d;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .grid header .header__lista {
+    list-style-type: none;
+    display: flex;
+    width: 600px;
+    margin-top: 80px;
+  }
+  .grid header .header__lista li a {
+    height: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #b37d22;
+    font-family: keepontruckin;
+    font-size: 25px;
+    font-weight: lighter;
+    text-decoration: none;
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-image: url(../imagenes/2.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .grid header .header__lista li a:hover {
+    background-color: #b37d22;
+    color: #78180d;
+    padding: 15px;
+  }
+  .grid .header__gal {
+    background-image: url(../imagenes/4.jpeg);
+    background-size: 400px;
+  }
+  .grid .header__gal .header__titulo {
+    color: #b37d22;
+  }
+  .grid .header__fondo {
+    background-image: url(../imagenes/3.jpeg);
+  }
+  .grid .header__fondo .header__titulo--dis {
+    color: #b37d22;
+    font-size: 80px;
+    font-family: curvilingus;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 1200px) {
+  .grid {
+    grid-template-areas: "cabecera " "main main" "piDePagina pieDePagina";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .grid header {
+    grid-area: cabecera;
+    background-image: url(../imagenes/2.jpeg);
+    background-size: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .grid header .header__logo {
+    border-radius: 50px;
+    height: 150px;
+    width: 150px;
+  }
+  .grid header .header__titulo {
+    font-size: 80px;
+    font-family: curvilingus;
+    color: #78180d;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .grid header .header__lista {
+    list-style-type: none;
+    display: flex;
+    width: 400px;
+    margin-top: 80px;
+  }
+  .grid header .header__lista li a {
+    height: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #b37d22;
+    font-family: keepontruckin;
+    font-size: 25px;
+    font-weight: lighter;
+    text-decoration: none;
+    border: 2px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-image: url(../imagenes/2.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .grid .header__gal {
+    background-image: url(../imagenes/4.jpeg);
+    background-size: 400px;
+  }
+  .grid .header__fondo {
+    background-image: url(../imagenes/3.jpeg);
+  }
+  .grid .header__fondo .header__titulo--dis {
+    color: #b37d22;
+    font-size: 80px;
+    font-family: curvilingus;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-areas: "cabecera" "main" "pieDepagina";
+  grid-template-rows: 3, 1fr;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+.grid main {
+  grid-area: main;
+  background-image: url(../imagenes/4.jpeg);
+  background-size: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid main iframe {
+  margin-top: 20px;
+  height: 200px;
+  width: 300px;
+}
+.grid main h {
+  font-family: curvilingus;
+  color: #dca015;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.grid main p {
+  font-family: keepontruckin;
+  color: #b37d22;
+  font-size: 15px;
+  font-weight: lighter;
+  width: 250px;
+  text-decoration: none;
+}
+.grid .main--galeria {
+  height: 1500px;
+  background-image: url(../imagenes/4.jpeg);
+  background-size: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.grid .main--galeria .fotoUno {
+  border-radius: 10px;
+  border: 3px solid;
+  border-color: #060606;
+  height: 140px;
+  width: 140px;
+}
+.grid .main--canciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-image: url(../imagenes/3.jpeg);
+  background-size: 400px;
+}
+.grid .main--canciones .tabla {
+  position: relative;
+  top: 50px;
+  height: 200px;
+  width: 500px;
+  color: #b37d22;
+  border: 10px;
+  background-color: #030303;
+  font-family: keepontruckin;
+  border-radius: 10px;
+  border-color: #b37d22;
+}
+.grid .main--cont {
+  height: 800px;
+  background-image: url(../imagenes/4.jpeg);
+  background-size: 200px;
+}
+.grid .main--cont .texto__cont {
+  font-family: curvilingus;
+  color: #b37d22;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+  width: 300px;
+}
+.grid .main--cont .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: 30px;
+  width: 300px;
+  color: #b37d22;
+  text-align: center;
+  font-family: keepontruckin;
+  font-size: 15px;
+}
+.grid .main--cont .boton {
+  border-radius: 10px;
+  font-size: 15px;
+  width: 100px;
+  background-color: #b37d22;
+  cursor: pointer;
+}
+.grid .main--tips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imagenes/4.jpeg);
+  background-size: 400px;
+}
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    grid-template-areas: "cabecera " "main main" "piDePagina ";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .grid .main {
+    grid-area: main;
+    background-image: url(../imagenes/7.jpeg);
+    background-size: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .grid .main .main__video {
+    height: 400px;
+    width: 600px;
+  }
+  .grid .main .main__titulo {
+    font-family: curvilingus;
+    color: #78180d;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .grid .main .main__parrafo {
+    font-family: keepontruckin;
+    color: #b37d22;
+    font-size: 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    width: 800px;
+  }
+  .grid .main .main__video {
+    height: 400px;
+    width: 600px;
+  }
+  .grid .main--galeria .fotoUno {
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #0c0c0c;
+    height: 300px;
+    width: 300px;
+    transition: all 1s ease-in-out;
+  }
+  .grid .main--galeria .fotoUno:hover {
+    height: 350px;
+    width: 350px;
+    border-color: #b37d22;
+  }
+  .grid .main--canciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url(../imagenes/3.jpeg);
+    background-size: 400px;
+  }
+  .grid .main--canciones .tabla {
+    height: 220px;
+    width: 500px;
+    margin-bottom: 50px;
+    color: #b37d22;
+    border: 10px;
+    background-color: #030303;
+    font-family: keepontruckin;
+    border-radius: 10px;
+    border-color: #b37d22;
+  }
+  .grid .main--cont {
+    height: 800px;
+    background-image: url(../imagenes/4.jpeg);
+    background-size: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid .main--cont .texto__cont {
+    font-family: curvilingus;
+    color: #b37d22;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    width: 600px;
+  }
+  .grid .main--cont .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    color: #b37d22;
+    text-align: center;
+    font-family: keepontruckin;
+    font-size: 20px;
+  }
+  .grid .main--cont .boton {
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100px;
+    cursor: pointer;
+  }
+  .grid .main--cont .boton:hover {
+    padding: 5px;
+    background-color: #78180d;
+  }
+  .grid .main--tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagenes/4.jpeg);
+    background-size: 400px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 1200px) {
+  .grid {
+    grid-template-areas: "cabecera " "main main" "piDePagina pieDePagina";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .grid .main {
+    grid-area: main;
+    background-image: url(../imagenes/2.jpeg);
+    background-size: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .grid .main .main__video {
+    height: 400px;
+    width: 600px;
+  }
+  .grid .main .main__titulo {
+    font-family: curvilingus;
+    color: #78180d;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .grid .main .main__parrafo {
+    font-family: keepontruckin;
+    color: #b37d22;
+    font-size: 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    width: 800px;
+  }
+  .grid .main__galeria .fotoUno {
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #060606;
+    height: 250px;
+    width: 250px;
+  }
+  .grid .main--canciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url(../imagenes/3.jpeg);
+    background-size: 400px;
+  }
+  .grid .main--canciones .tabla {
+    position: relative;
+    top: 50px;
+    height: 200px;
+    width: 500px;
+    color: #b37d22;
+    border: 10px;
+    background-color: #030303;
+    font-family: keepontruckin;
+    border-radius: 10px;
+    border-color: #b37d22;
+  }
+  .grid .main--cont {
+    height: 800px;
+    background-image: url(../imagenes/4.jpeg);
+    background-size: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid .main--cont .texto__cont {
+    font-family: curvilingus;
+    color: #b37d22;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    width: 600px;
+  }
+  .grid .main--cont .formulario {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    color: #b37d22;
+    text-align: center;
+    font-family: keepontruckin;
+    font-size: 20px;
+  }
+  .grid .main--cont .boton {
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100px;
+    background-color: #b37d22;
+    cursor: pointer;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-areas: "cabecera" "main" "pieDepagina";
+  grid-template-rows: 3, 1fr;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+.grid .footer {
+  grid-area: pieDepagina;
+  background-image: url(../imagenes/4.jpeg);
+  background-size: 200px;
+}
+.grid .footer .footer__links {
+  padding: 30px;
+  list-style-type: none;
+}
+.grid .footer__gal {
+  background-image: url(../imagenes/4.jpeg);
+  background-size: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+.grid .footer--can {
+  background-image: url(../imagenes/3.jpeg);
+  background-size: 400px;
+  margin-top: 50px;
+}
+.grid .footer__tips {
+  background-image: url(../imagenes/4.jpeg);
+  background-size: 400px;
+}
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    grid-template-areas: "cabecera " "main main" "piDePagina pieDePagina";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .grid .footer {
+    grid-area: pieDepagina;
+    background-image: url(../imagenes/7.jpeg);
+    background-size: 400px;
+  }
+  .grid .footer .footer__links {
+    padding: 30px;
+    list-style-type: none;
+  }
+  .grid .footer--can {
+    margin-top: 0;
+    background-image: url(../imagenes/3.jpeg);
+    background-size: 400px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 1200px) {
+  .footer {
+    grid-area: pieDepagina;
+    background-image: url(../imagenes/2.jpeg);
+    background-size: 400px;
+  }
+  .footer .footer__links {
+    padding: 30px;
+    list-style-type: none;
+  }
+  .footer--can {
+    background-image: url(../imagenes/3.jpeg);
+    background-size: 400px;
+  }
+}/*# sourceMappingURL=styles.css.map */
