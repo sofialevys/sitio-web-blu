@@ -26,7 +26,7 @@
   width: 100px;
 }
 .grid header .header__titulo {
-  font-size: 30px;
+  font-size: 25px;
   font-family: curvilingus;
   color: #b37d22;
   margin-top: 10px;
@@ -46,7 +46,7 @@
   height: 10px;
   margin-right: 10px;
   margin-top: 10px;
-  color: #b37d22;
+  color: #c28722;
   font-family: keepontruckin;
   font-size: 15px;
   font-weight: lighter;
@@ -114,7 +114,7 @@
     height: 10px;
     margin-right: 10px;
     margin-top: 10px;
-    color: #b37d22;
+    color: #c28722;
     font-family: keepontruckin;
     font-size: 25px;
     font-weight: lighter;
@@ -186,7 +186,7 @@
     height: 10px;
     margin-right: 10px;
     margin-top: 10px;
-    color: #b37d22;
+    color: #c28722;
     font-family: keepontruckin;
     font-size: 25px;
     font-weight: lighter;
@@ -235,14 +235,14 @@
 }
 .grid main h {
   font-family: curvilingus;
-  color: #dca015;
+  color: #b37d22;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
 }
 .grid main p {
   font-family: keepontruckin;
-  color: #b37d22;
+  color: #c28722;
   font-size: 15px;
   font-weight: lighter;
   width: 250px;
@@ -276,7 +276,7 @@
   top: 50px;
   height: 200px;
   width: 300px;
-  color: #b37d22;
+  color: #c28722;
   border: 10px;
   background-color: #030303;
   font-family: keepontruckin;
@@ -290,8 +290,8 @@
 }
 .grid .main--cont .texto__cont {
   font-family: curvilingus;
-  color: #b37d22;
-  font-size: 20px;
+  color: #c28722;
+  font-size: 25px;
   text-align: center;
   text-decoration: underline;
   width: 300px;
@@ -303,7 +303,7 @@
   margin-left: 15px;
   margin-top: 30px;
   width: 300px;
-  color: #b37d22;
+  color: #c28722;
   text-align: center;
   font-family: keepontruckin;
   font-size: 15px;
@@ -353,7 +353,7 @@
   }
   .grid .main .main__parrafo {
     font-family: keepontruckin;
-    color: #b37d22;
+    color: #c28722;
     font-size: 30px;
     font-weight: lighter;
     text-decoration: none;
@@ -390,7 +390,7 @@
     height: 220px;
     width: 500px;
     margin-bottom: 50px;
-    color: #b37d22;
+    color: #c28722;
     border: 10px;
     background-color: #030303;
     font-family: keepontruckin;
@@ -408,7 +408,7 @@
   }
   .grid .main--cont .texto__cont {
     font-family: curvilingus;
-    color: #b37d22;
+    color: #c28722;
     font-size: 30px;
     text-align: center;
     text-decoration: underline;
@@ -419,7 +419,7 @@
     flex-direction: column;
     align-items: center;
     width: 300px;
-    color: #b37d22;
+    color: #c28722;
     text-align: center;
     font-family: keepontruckin;
     font-size: 20px;
@@ -477,7 +477,7 @@
   }
   .grid .main .main__parrafo {
     font-family: keepontruckin;
-    color: #b37d22;
+    color: #c28722;
     font-size: 30px;
     font-weight: lighter;
     text-decoration: none;
@@ -502,7 +502,7 @@
     top: 50px;
     height: 200px;
     width: 500px;
-    color: #b37d22;
+    color: #c28722;
     border: 10px;
     background-color: #030303;
     font-family: keepontruckin;
@@ -520,7 +520,7 @@
   }
   .grid .main--cont .texto__cont {
     font-family: curvilingus;
-    color: #b37d22;
+    color: #c28722;
     font-size: 30px;
     text-align: center;
     text-decoration: underline;
@@ -532,7 +532,7 @@
     flex-direction: column;
     align-items: center;
     width: 300px;
-    color: #b37d22;
+    color: #c28722;
     text-align: center;
     font-family: keepontruckin;
     font-size: 20px;
@@ -572,10 +572,10 @@
 .grid .footer--can {
   background-image: url(../imagenes/3.jpeg);
   background-size: 400px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .grid .footer--can .footer__links {
-  width: 300px;
+  width: 250px;
 }
 .grid .footer__tips {
   background-image: url(../imagenes/4.jpeg);
