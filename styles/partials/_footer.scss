@@ -8,10 +8,12 @@
     grid-template-columns: 1fr;
     height: 100vh; 
 
-    .footer {
+    footer {
         grid-area: pieDepagina;
         background-image: url(../imagenes/4.jpeg);
         background-size: 200px;
+        
+        
 
         .footer__links {
             @extend %flexFooter !optional;
@@ -33,6 +35,9 @@
         background-image: url(../imagenes/3.jpeg);
         background-size: 400px;
         margin-top: 50px;
+        .footer__links{
+            width: 300px;
+        }
     
     }
     
@@ -45,27 +50,31 @@
 @media screen and (min-width: 1200px) {
     .grid{ 
         grid-template-areas: 
-        "cabecera "
+        "cabecera"
         "main main"
         "piDePagina pieDePagina";
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: 1fr;
         height: 100vh;
 
-        .footer {
+        footer {
             grid-area: pieDepagina;
             background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
             .footer__links {
-                
+                display: flex;
+                justify-content: center;
                 padding: 30px;
                 list-style-type: none;
             }
         }
+        
         .footer--can{
             margin-top: 0;
             background-image: url(../imagenes/3.jpeg);
             background-size: 400px;
+            display: flex;
+            justify-content: center;
         
         }
     }
@@ -73,7 +82,7 @@
 
 @media screen and (min-width: 400px) and (max-width: 1200px)  {
 
-    .footer {
+    footer {
         grid-area: pieDepagina;
         background-image: url(../imagenes/2.jpeg);
         background-size: 400px;

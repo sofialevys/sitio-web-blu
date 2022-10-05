@@ -17,6 +17,7 @@
         align-items: center;
 
         iframe{
+            
             margin-top: 20px;
             height: 200px;
             width: 300px;
@@ -61,14 +62,16 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        align-items:flex-start;
         background-image: url(../imagenes/3.jpeg);
-        background-size: 400px;
+        background-size: 200px;
+        
 
         .tabla {
             position: relative;
             top:50px;
             height: 200px;
-            width: 500px;
+            width: 300px;
             color: #b37d22;
             border: 10px;
             background-color: #030303;
@@ -192,11 +195,14 @@
            }
         }
         .main--canciones{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
             background-image: url(../imagenes/3.jpeg);
             background-size: 400px;
+            display: flex;
+            align-items: center;
+            iframe{
+                width: 600px;
+                height: 350px;
+            }
 
             .tabla {
                 height: 220px;
