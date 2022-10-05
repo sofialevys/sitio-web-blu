@@ -1,3 +1,4 @@
+
 .grid {
     display: grid;
     grid-template-areas:
@@ -25,9 +26,9 @@
         }
 
         .header__titulo {
-            font-size: 30px;
+            font-size: $tamanofontsdos;
             font-family: curvilingus;
-            color: #b37d22;
+            color: map-get($colores, tituloUno);
             margin-top: 10px;
             text-align: center;
             
@@ -47,7 +48,7 @@
                 height: 10px;
                 margin-right: 10px;
                 margin-top: 10px;
-                color: #b37d22;
+                color: map-get($colores, fontUno);
                 font-family: keepontruckin;
                 font-size: 15px;
                 font-weight: lighter;
@@ -67,7 +68,7 @@
     .header__fondo {
         background-image:url(../imagenes/3.jpeg);
         .header__titulo--dis {
-            color: #b37d22;
+            color: map-get($colores, tituloUno);
             font-size: 30px;
             font-family: curvilingus;
             margin-top: 10px;
@@ -111,7 +112,7 @@
             }
 
             .header__titulo{
-                font-size: 80px;
+                font-size: $tamanofontsuno;
                 font-family: curvilingus;
                 color:map-get($colores, tituloDos);
                 margin-top: 10px;
@@ -129,9 +130,9 @@
                 height: 10px;
                 margin-right: 10px;
                 margin-top: 10px;
-                color: #b37d22;
+                color: map-get($colores, fontUno);
                 font-family: keepontruckin;
-                font-size: 25px;
+                font-size: $tamanofontsdos;
                 font-weight: lighter;
                 text-decoration: none;
                 border: 02px solid;
@@ -163,8 +164,8 @@
         .header__fondo {
             background-image:url(../imagenes/3.jpeg);
             .header__titulo--dis {
-                color: #b37d22;
-                font-size: 80px;
+                color: map-get($colores, tituloUno);
+                font-size: $tamanofontsuno;
                 font-family: curvilingus;
                 margin-top: 10px;
                 text-align: center;
@@ -199,9 +200,9 @@
                 width: 150px;
             }
             .header__titulo {
-                font-size: 80px;
+                font-size: $tamanofontsuno;
                 font-family: curvilingus;
-                color: #78180d;
+                color: map-get($colores, tituloDos);
                 margin-top: 10px;
                 text-align: center;
             }
@@ -217,9 +218,9 @@
                 height: 10px;
                 margin-right: 10px;
                 margin-top: 10px;
-                color: #b37d22;
+                color: map-get($colores, fontUno);
                 font-family: keepontruckin;
-                font-size: 25px;
+                font-size: $tamanofontsdos;
                 font-weight: lighter;
                 text-decoration: none;
                 border: 02px solid;
@@ -240,8 +241,8 @@
             background-image:url(../imagenes/3.jpeg);
 
             .header__titulo--dis {
-                color: #b37d22;
-                font-size: 80px;
+                color: map-get($colores, tituloUno);
+                font-size: $tamanofontsuno;
                 font-family: curvilingus;
                 margin-top: 10px;
                 text-align: center;

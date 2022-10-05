@@ -1,4 +1,4 @@
-.grid .footer .footer__links {
+.grid footer .footer__links {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -26,7 +26,7 @@
   width: 100px;
 }
 .grid header .header__titulo {
-  font-size: 30px;
+  font-size: 25px;
   font-family: curvilingus;
   color: #b37d22;
   margin-top: 10px;
@@ -46,7 +46,7 @@
   height: 10px;
   margin-right: 10px;
   margin-top: 10px;
-  color: #b37d22;
+  color: #c28722;
   font-family: keepontruckin;
   font-size: 15px;
   font-weight: lighter;
@@ -114,7 +114,7 @@
     height: 10px;
     margin-right: 10px;
     margin-top: 10px;
-    color: #b37d22;
+    color: #c28722;
     font-family: keepontruckin;
     font-size: 25px;
     font-weight: lighter;
@@ -186,7 +186,7 @@
     height: 10px;
     margin-right: 10px;
     margin-top: 10px;
-    color: #b37d22;
+    color: #c28722;
     font-family: keepontruckin;
     font-size: 25px;
     font-weight: lighter;
@@ -235,14 +235,14 @@
 }
 .grid main h {
   font-family: curvilingus;
-  color: #dca015;
+  color: #b37d22;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
 }
 .grid main p {
   font-family: keepontruckin;
-  color: #b37d22;
+  color: #c28722;
   font-size: 15px;
   font-weight: lighter;
   width: 250px;
@@ -267,15 +267,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: flex-start;
   background-image: url(../imagenes/3.jpeg);
-  background-size: 400px;
+  background-size: 200px;
 }
 .grid .main--canciones .tabla {
   position: relative;
   top: 50px;
   height: 200px;
-  width: 500px;
-  color: #b37d22;
+  width: 300px;
+  color: #c28722;
   border: 10px;
   background-color: #030303;
   font-family: keepontruckin;
@@ -289,8 +290,8 @@
 }
 .grid .main--cont .texto__cont {
   font-family: curvilingus;
-  color: #b37d22;
-  font-size: 20px;
+  color: #c28722;
+  font-size: 25px;
   text-align: center;
   text-decoration: underline;
   width: 300px;
@@ -302,7 +303,7 @@
   margin-left: 15px;
   margin-top: 30px;
   width: 300px;
-  color: #b37d22;
+  color: #c28722;
   text-align: center;
   font-family: keepontruckin;
   font-size: 15px;
@@ -352,7 +353,7 @@
   }
   .grid .main .main__parrafo {
     font-family: keepontruckin;
-    color: #b37d22;
+    color: #c28722;
     font-size: 30px;
     font-weight: lighter;
     text-decoration: none;
@@ -376,17 +377,20 @@
     border-color: #b37d22;
   }
   .grid .main--canciones {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     background-image: url(../imagenes/3.jpeg);
     background-size: 400px;
+    display: flex;
+    align-items: center;
+  }
+  .grid .main--canciones iframe {
+    width: 600px;
+    height: 350px;
   }
   .grid .main--canciones .tabla {
     height: 220px;
     width: 500px;
     margin-bottom: 50px;
-    color: #b37d22;
+    color: #c28722;
     border: 10px;
     background-color: #030303;
     font-family: keepontruckin;
@@ -404,7 +408,7 @@
   }
   .grid .main--cont .texto__cont {
     font-family: curvilingus;
-    color: #b37d22;
+    color: #c28722;
     font-size: 30px;
     text-align: center;
     text-decoration: underline;
@@ -415,12 +419,17 @@
     flex-direction: column;
     align-items: center;
     width: 300px;
-    color: #b37d22;
+    color: #c28722;
     text-align: center;
     font-family: keepontruckin;
     font-size: 20px;
   }
   .grid .main--cont .boton {
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100px;
+    cursor: pointer;
+    background-color: rgba(228, 141, 9, 0.8352941176);
     border-radius: 10px;
     font-size: 15px;
     width: 100px;
@@ -468,7 +477,7 @@
   }
   .grid .main .main__parrafo {
     font-family: keepontruckin;
-    color: #b37d22;
+    color: #c28722;
     font-size: 30px;
     font-weight: lighter;
     text-decoration: none;
@@ -493,7 +502,7 @@
     top: 50px;
     height: 200px;
     width: 500px;
-    color: #b37d22;
+    color: #c28722;
     border: 10px;
     background-color: #030303;
     font-family: keepontruckin;
@@ -511,7 +520,7 @@
   }
   .grid .main--cont .texto__cont {
     font-family: curvilingus;
-    color: #b37d22;
+    color: #c28722;
     font-size: 30px;
     text-align: center;
     text-decoration: underline;
@@ -523,7 +532,7 @@
     flex-direction: column;
     align-items: center;
     width: 300px;
-    color: #b37d22;
+    color: #c28722;
     text-align: center;
     font-family: keepontruckin;
     font-size: 20px;
@@ -543,12 +552,12 @@
   grid-template-columns: 1fr;
   height: 100vh;
 }
-.grid .footer {
+.grid footer {
   grid-area: pieDepagina;
   background-image: url(../imagenes/4.jpeg);
   background-size: 200px;
 }
-.grid .footer .footer__links {
+.grid footer .footer__links {
   padding: 30px;
   list-style-type: none;
 }
@@ -563,7 +572,10 @@
 .grid .footer--can {
   background-image: url(../imagenes/3.jpeg);
   background-size: 400px;
-  margin-top: 50px;
+  margin-top: 10px;
+}
+.grid .footer--can .footer__links {
+  width: 250px;
 }
 .grid .footer__tips {
   background-image: url(../imagenes/4.jpeg);
@@ -572,17 +584,19 @@
 
 @media screen and (min-width: 1200px) {
   .grid {
-    grid-template-areas: "cabecera " "main main" "piDePagina pieDePagina";
+    grid-template-areas: "cabecera" "main main" "piDePagina pieDePagina";
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr;
     height: 100vh;
   }
-  .grid .footer {
+  .grid footer {
     grid-area: pieDepagina;
     background-image: url(../imagenes/7.jpeg);
     background-size: 400px;
   }
-  .grid .footer .footer__links {
+  .grid footer .footer__links {
+    display: flex;
+    justify-content: center;
     padding: 30px;
     list-style-type: none;
   }
@@ -590,15 +604,17 @@
     margin-top: 0;
     background-image: url(../imagenes/3.jpeg);
     background-size: 400px;
+    display: flex;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 400px) and (max-width: 1200px) {
-  .footer {
+  footer {
     grid-area: pieDepagina;
     background-image: url(../imagenes/2.jpeg);
     background-size: 400px;
   }
-  .footer .footer__links {
+  footer .footer__links {
     padding: 30px;
     list-style-type: none;
   }
