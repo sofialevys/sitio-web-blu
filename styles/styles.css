@@ -158,7 +158,7 @@
   }
   .grid header {
     grid-area: cabecera;
-    background-image: url(../imagenes/2.jpeg);
+    background-image: url(../imagenes/7.jpeg);
     background-size: 400px;
     display: flex;
     align-items: center;
@@ -172,7 +172,7 @@
   .grid header .header__titulo {
     font-size: 80px;
     font-family: curvilingus;
-    color: #78180d;
+    color: #b37d22;
     margin-top: 10px;
     text-align: center;
   }

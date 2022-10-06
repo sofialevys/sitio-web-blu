@@ -188,7 +188,7 @@
 
         header{
             grid-area: cabecera;
-            background-image: url(../imagenes/2.jpeg);
+            background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
             display: flex;
             align-items: center;
@@ -202,7 +202,7 @@
             .header__titulo {
                 font-size: $tamanofontsuno;
                 font-family: curvilingus;
-                color: map-get($colores, tituloDos);
+                color: map-get($colores, tituloUno);
                 margin-top: 10px;
                 text-align: center;
             }
