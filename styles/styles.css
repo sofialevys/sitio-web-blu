@@ -256,7 +256,7 @@
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
-.grid .main--galeria .fotoUno {
+.grid .main--galeria img {
   border-radius: 10px;
   border: 3px solid;
   border-color: #060606;
@@ -457,7 +457,7 @@
   }
   .grid .main {
     grid-area: main;
-    background-image: url(../imagenes/2.jpeg);
+    background-image: url(../imagenes/7.jpeg);
     background-size: 400px;
     display: flex;
     flex-direction: column;
@@ -483,10 +483,10 @@
     text-decoration: none;
     width: 800px;
   }
-  .grid .main__galeria .fotoUno {
+  .grid .main--galeria .fotoUno {
     border-radius: 10px;
     border: 3px solid;
-    border-color: #060606;
+    border-color: #0c0c0c;
     height: 250px;
     width: 250px;
   }
@@ -494,6 +494,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     background-image: url(../imagenes/3.jpeg);
     background-size: 400px;
   }
@@ -573,9 +574,10 @@
   background-image: url(../imagenes/3.jpeg);
   background-size: 400px;
   margin-top: 10px;
+  margin-top: 0;
 }
 .grid .footer--can .footer__links {
-  width: 250px;
+  margin-top: 50px;
 }
 .grid .footer__tips {
   background-image: url(../imagenes/4.jpeg);
@@ -611,7 +613,7 @@
 @media screen and (min-width: 400px) and (max-width: 1200px) {
   footer {
     grid-area: pieDepagina;
-    background-image: url(../imagenes/2.jpeg);
+    background-image: url(../imagenes/7.jpeg);
     background-size: 400px;
   }
   footer .footer__links {

@@ -17,6 +17,7 @@
         align-items: center;
 
         iframe{
+            
             margin-top: 20px;
             height: 200px;
             width: 300px;
@@ -24,8 +25,8 @@
         
         h{
             font-family: curvilingus;
-            color: #dca015;
-            font-size: 30px;
+            color: map-get($colores, tituloUno);
+            font-size: $tamanofontstres;
             font-weight: bold;
             text-align: center;
             
@@ -33,8 +34,8 @@
 
         p{
             font-family: keepontruckin;
-            color: #b37d22;
-            font-size: 15px;
+            color: map-get($colores, fontUno);
+            font-size: $tamanofontscuatro;
             font-weight: lighter;
             width: 250px;
             text-decoration: none;
@@ -48,7 +49,7 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;  
-        .fotoUno {
+        img {
             border-radius: 10px;
             border: 03px solid;
             border-color: #060606;
@@ -61,15 +62,17 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        align-items:flex-start;
         background-image: url(../imagenes/3.jpeg);
-        background-size: 400px;
+        background-size: 200px;
+        
 
         .tabla {
             position: relative;
             top:50px;
             height: 200px;
-            width: 500px;
-            color: #b37d22;
+            width: 300px;
+            color: map-get($colores, fontUno);
             border: 10px;
             background-color: #030303;
             font-family: keepontruckin;
@@ -84,8 +87,8 @@
         background-size: 200px;
         .texto__cont {
             font-family: curvilingus;
-            color: #b37d22;
-            font-size: 20px;
+            color: map-get($colores, fontUno);
+            font-size: $tamanofontsdos;
             text-align: center;
             text-decoration: underline;
             width: 300px;
@@ -98,16 +101,16 @@
             margin-left: 15px;
             margin-top: 30px;
             width: 300px;
-            color: #b37d22;
+            color: map-get($colores, fontUno);
             text-align: center;
             font-family: keepontruckin;
-            font-size: 15px;
+            font-size: $tamanofontscuatro;
             
         }
         
         .boton {
             border-radius: 10px;
-            font-size: 15px;
+            font-size: $tamanofontscuatro;
             width: 100px;
             background-color: #b37d22;
             cursor: pointer;
@@ -150,8 +153,8 @@
         
             .main__titulo {
                 font-family: curvilingus;
-                color: #78180d;
-                font-size: 50px;
+                color: map-get($colores, tituloDos);
+                font-size: $tamanofontscinco;
                 font-weight: bold;
                 text-align: center;
             
@@ -159,8 +162,8 @@
             
             .main__parrafo {
                 font-family: keepontruckin;
-                color: #b37d22;
-                font-size: 30px;
+                color: map-get($colores, fontUno);
+                font-size: $tamanofontstres;
                 font-weight: lighter;
                 text-decoration: none;
                 width: 800px;
@@ -192,17 +195,20 @@
            }
         }
         .main--canciones{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
             background-image: url(../imagenes/3.jpeg);
             background-size: 400px;
+            display: flex;
+            align-items: center;
+            iframe{
+                width: 600px;
+                height: 350px;
+            }
 
             .tabla {
                 height: 220px;
                 width: 500px;
                 margin-bottom: 50px;
-                color: #b37d22;
+                color: map-get($colores, fontUno);
                 border: 10px;
                 background-color: #030303;
                 font-family: keepontruckin;
@@ -220,8 +226,8 @@
             justify-content: center;
             .texto__cont {
                 font-family: curvilingus;
-                color: #b37d22;
-                font-size: 30px;
+                color: map-get($colores, fontUno);
+                font-size: $tamanofontstres;
                 text-align: center;
                 text-decoration: underline;
                 width: 600px;
@@ -232,10 +238,10 @@
                 flex-direction: column;
                 align-items:center ;
                 width: 300px;
-                color: #b37d22;
+                color: map-get($colores, fontUno);
                 text-align: center;
                 font-family: keepontruckin;
-                font-size: 20px;
+                font-size: $tamanofontsseis;
                 
             }
             
@@ -243,7 +249,7 @@
             .boton {
                 @include button(#e48d09d5);
                 border-radius: 10px;
-                font-size: 15px;
+                font-size: $tamanofontscuatro;
                 width: 100px;
                 cursor: pointer;
                 transition: map-get($transitions, tranistionUno);
@@ -277,7 +283,7 @@
 
         .main {
             grid-area: main;
-            background-image: url(../imagenes/2.jpeg);
+            background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
             display: flex;
             flex-direction: column;
@@ -292,8 +298,8 @@
         
             .main__titulo {
                 font-family: curvilingus;
-                color: #78180d;
-                font-size: 50px;
+                color: map-get($colores, tituloDos);
+                font-size: $tamanofontscinco;
                 font-weight: bold;
                 text-align: center;
             
@@ -301,8 +307,8 @@
             
             .main__parrafo {
                 font-family: keepontruckin;
-                color: #b37d22;
-                font-size: 30px;
+                color: map-get($colores, fontUno);
+                font-size: $tamanofontstres;
                 font-weight: lighter;
                 text-decoration: none;
                 width: 800px;
@@ -310,15 +316,14 @@
             } 
         }
     
-        .main__galeria{
+        .main--galeria{
             .fotoUno {
                 border-radius: 10px;
                 border: 03px solid;
-                border-color: #060606;
+                border-color: #0c0c0c;
                 height: 250px;
-                width: 250px;
-           }
-        }
+                width: 250px;}
+            }
         .main--canciones{
             display: flex;
             flex-wrap: wrap;
@@ -332,7 +337,7 @@
                 top:50px;
                 height: 200px;
                 width: 500px;
-                color: #b37d22;
+                color: map-get($colores, fontUno);
                 border: 10px;
                 background-color: #030303;
                 font-family: keepontruckin;
@@ -350,8 +355,8 @@
             align-items: center;
             .texto__cont {
                 font-family: curvilingus;
-                color: #b37d22;
-                font-size: 30px;
+                color: map-get($colores, fontUno);
+                font-size: $tamanofontstres;
                 text-align: center;
                 text-decoration: underline;
                 width: 600px;
@@ -364,7 +369,7 @@
                 flex-direction: column;
                 align-items:center ;
                 width: 300px;
-                color: #b37d22;
+                color: map-get($colores, fontUno);
                 text-align: center;
                 font-family: keepontruckin;
                 font-size: 20px;
@@ -373,7 +378,7 @@
             
             .boton {
                 border-radius: 10px;
-                font-size: 15px;
+                font-size: $tamanofontscuatro;
                 width: 100px;
                 background-color: #b37d22;
                 cursor: pointer;
