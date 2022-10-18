@@ -10,7 +10,7 @@
 
     main{
         grid-area: main;
-        background-image: url(../imagenes/4.jpeg);
+        background-image: url(../imagenes/7.jpeg);
         background-size: 200px;
         display: flex;
         flex-direction: column;
@@ -43,7 +43,7 @@
     }
     .main--galeria {
         height: 1500px;
-        background-image: url(../imagenes/4.jpeg);
+        background-image: url(../imagenes/7.jpeg);
         background-size: 400px;
         display: flex;
         flex-flow: row wrap;
@@ -62,7 +62,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items:flex-start;
-        background-image: url(../imagenes/3.jpeg);
+        background-image: url(../imagenes/7.jpeg);
         background-size: 200px;
         
 
@@ -82,7 +82,7 @@
 
     .main--cont {
         height: 800px;
-        background-image: url(../imagenes/4.jpeg);
+        background-image: url(../imagenes/7.jpeg);
         background-size: 200px;
         .texto__cont {
             font-family: curvilingus;
@@ -121,7 +121,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        background-image: url(../imagenes/4.jpeg);
+        background-image: url(../imagenes/7.jpeg);
         background-size: 400px;
     }
 }
@@ -181,20 +181,20 @@
             .fotoUno {
                 border-radius: 10px;
                 border: 03px solid;
-                border-color: #0c0c0c;
+                border-color: #3a0e09;
                 height: 300px;
                 width: 300px;
                 transition: map-get($transitions, transitionUno);
                 &:hover { 
                     height: 350px;
                     width: 350px;
-                    border-color: #b37d22;
+                    border-color: #be7b15;
 
                 }
            }
         }
         .main--canciones{
-            background-image: url(../imagenes/3.jpeg);
+            background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
             display: flex;
             align-items: center;
@@ -217,7 +217,7 @@
         }
         .main--cont {
             height: 800px;
-            background-image: url(../imagenes/4.jpeg);
+            background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
             display: flex;
             flex-direction: column;
@@ -259,8 +259,9 @@
             }
         }
         .main--tips{
-            height: 1400px;
-            background-image: url(../imagenes/4.jpeg);
+            display: flex;
+            flex-direction: row;
+            background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
         }
     }
@@ -325,7 +326,7 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             align-items: center;
-            background-image: url(../imagenes/3.jpeg);
+            background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
 
             .tabla {
@@ -343,7 +344,7 @@
         }
         .main--cont {
             height: 800px;  
-            background-image: url(../imagenes/4.jpeg);
+            background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
             display: flex;
             flex-direction: column;
