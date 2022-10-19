@@ -18,13 +18,14 @@
 
         .main--canciones__vid{
             margin-top: 20px;
+            margin-left: 05px;
             height: 200px;
             width: 300px;
         }
         
         h{
             font-family: curvilingus;
-            color: map-get($colores, tituloUno);
+            color: map-get($colores, tituloDos);
             font-size: $tamanofontstres;
             font-weight: bold;
             text-align: center;
@@ -38,6 +39,7 @@
             font-weight: lighter;
             width: 250px;
             text-decoration: none;
+            margin-left: 25px;
 
         }
     }
@@ -73,7 +75,7 @@
             width: 300px;
             color: map-get($colores, fontUno);
             border: 10px;
-            background-color: #030303;
+            background-color: #4d0d0d83;
             font-family: keepontruckin;
             border-radius: 10px;
             border-color: #b37d22;
@@ -87,10 +89,10 @@
         .texto__cont {
             font-family: curvilingus;
             color: map-get($colores, fontUno);
-            font-size: $tamanofontsdos;
+            font-size: $tamanofontsseis;
             text-align: center;
             text-decoration: underline;
-            width: 300px;
+            width: 250px;
         }
         
         .formulario {

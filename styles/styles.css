@@ -230,12 +230,13 @@
 }
 .grid main .main--canciones__vid {
   margin-top: 20px;
+  margin-left: 5px;
   height: 200px;
   width: 300px;
 }
 .grid main h {
   font-family: curvilingus;
-  color: #b37d22;
+  color: #78180d;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
@@ -247,6 +248,7 @@
   font-weight: lighter;
   width: 250px;
   text-decoration: none;
+  margin-left: 25px;
 }
 .grid .main--galeria {
   height: 1500px;
@@ -278,7 +280,7 @@
   width: 300px;
   color: #c28722;
   border: 10px;
-  background-color: #030303;
+  background-color: rgba(77, 13, 13, 0.5137254902);
   font-family: keepontruckin;
   border-radius: 10px;
   border-color: #b37d22;
@@ -291,10 +293,10 @@
 .grid .main--cont .texto__cont {
   font-family: curvilingus;
   color: #c28722;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   text-decoration: underline;
-  width: 300px;
+  width: 250px;
 }
 .grid .main--cont .formulario {
   display: flex;
