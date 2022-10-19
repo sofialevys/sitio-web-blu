@@ -10,7 +10,7 @@
 
     main{
         grid-area: main;
-        background-image: url(../imagenes/4.jpeg);
+        background-image: url(../imagenes/7.jpeg);
         background-size: 200px;
         display: flex;
         flex-direction: column;
@@ -18,13 +18,14 @@
 
         .main--canciones__vid{
             margin-top: 20px;
+            margin-left: 05px;
             height: 200px;
             width: 300px;
         }
         
         h{
             font-family: curvilingus;
-            color: map-get($colores, tituloUno);
+            color: map-get($colores, tituloDos);
             font-size: $tamanofontstres;
             font-weight: bold;
             text-align: center;
@@ -38,12 +39,13 @@
             font-weight: lighter;
             width: 250px;
             text-decoration: none;
+            margin-left: 25px;
 
         }
     }
     .main--galeria {
         height: 1500px;
-        background-image: url(../imagenes/4.jpeg);
+        background-image: url(../imagenes/7.jpeg);
         background-size: 400px;
         display: flex;
         flex-flow: row wrap;
@@ -62,7 +64,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items:flex-start;
-        background-image: url(../imagenes/3.jpeg);
+        background-image: url(../imagenes/7.jpeg);
         background-size: 200px;
         
 
@@ -73,7 +75,7 @@
             width: 300px;
             color: map-get($colores, fontUno);
             border: 10px;
-            background-color: #030303;
+            background-color: #4d0d0d83;
             font-family: keepontruckin;
             border-radius: 10px;
             border-color: #b37d22;
@@ -82,15 +84,15 @@
 
     .main--cont {
         height: 800px;
-        background-image: url(../imagenes/4.jpeg);
+        background-image: url(../imagenes/7.jpeg);
         background-size: 200px;
         .texto__cont {
             font-family: curvilingus;
             color: map-get($colores, fontUno);
-            font-size: $tamanofontsdos;
+            font-size: $tamanofontsseis;
             text-align: center;
             text-decoration: underline;
-            width: 300px;
+            width: 250px;
         }
         
         .formulario {
@@ -121,7 +123,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        background-image: url(../imagenes/4.jpeg);
+        background-image: url(../imagenes/7.jpeg);
         background-size: 400px;
     }
 }
@@ -181,20 +183,20 @@
             .fotoUno {
                 border-radius: 10px;
                 border: 03px solid;
-                border-color: #0c0c0c;
+                border-color: #3a0e09;
                 height: 300px;
                 width: 300px;
                 transition: map-get($transitions, transitionUno);
                 &:hover { 
                     height: 350px;
                     width: 350px;
-                    border-color: #b37d22;
+                    border-color: #be7b15;
 
                 }
            }
         }
         .main--canciones{
-            background-image: url(../imagenes/3.jpeg);
+            background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
             display: flex;
             align-items: center;
@@ -217,7 +219,7 @@
         }
         .main--cont {
             height: 800px;
-            background-image: url(../imagenes/4.jpeg);
+            background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
             display: flex;
             flex-direction: column;
@@ -259,8 +261,9 @@
             }
         }
         .main--tips{
-            height: 1400px;
-            background-image: url(../imagenes/4.jpeg);
+            display: flex;
+            flex-direction: row;
+            background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
         }
     }
@@ -325,7 +328,7 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             align-items: center;
-            background-image: url(../imagenes/3.jpeg);
+            background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
 
             .tabla {
@@ -343,7 +346,7 @@
         }
         .main--cont {
             height: 800px;  
-            background-image: url(../imagenes/4.jpeg);
+            background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
             display: flex;
             flex-direction: column;

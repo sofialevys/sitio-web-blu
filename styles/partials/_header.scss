@@ -11,7 +11,7 @@
 
     header{
         grid-area: cabecera;
-        background-image: url(../imagenes/4.jpeg);
+        background-image: url(../imagenes/7.jpeg);
         background-size: 200px;
         display: flex;
         align-items: center;
@@ -66,7 +66,7 @@
     }
     
     .header__fondo {
-        background-image:url(../imagenes/3.jpeg);
+        background-image:url(../imagenes/7.jpeg);
         .header__titulo--dis {
             color: map-get($colores, tituloUno);
             font-size: 30px;
@@ -154,7 +154,7 @@
         }
 
         .header__gal {
-            background-image: url(../imagenes/4.jpeg);
+            background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
             .header__titulo{
                 color: map-get($colores, tituloUno);
@@ -162,7 +162,7 @@
         }
 
         .header__fondo {
-            background-image:url(../imagenes/3.jpeg);
+            background-image:url(../imagenes/7.jpeg);
             .header__titulo--dis {
                 color: map-get($colores, tituloUno);
                 font-size: $tamanofontsuno;
@@ -233,12 +233,12 @@
         }
 
         .header__gal {
-            background-image: url(../imagenes/4.jpeg);
+            background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
         }
 
         .header__fondo {
-            background-image:url(../imagenes/3.jpeg);
+            background-image:url(../imagenes/7.jpeg);
 
             .header__titulo--dis {
                 color: map-get($colores, tituloUno);

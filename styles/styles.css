@@ -13,7 +13,7 @@
 }
 .grid header {
   grid-area: cabecera;
-  background-image: url(../imagenes/4.jpeg);
+  background-image: url(../imagenes/7.jpeg);
   background-size: 200px;
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@
   border-radius: 10px;
 }
 .grid .header__fondo {
-  background-image: url(../imagenes/3.jpeg);
+  background-image: url(../imagenes/7.jpeg);
 }
 .grid .header__fondo .header__titulo--dis {
   color: #b37d22;
@@ -132,14 +132,14 @@
     padding: 15px;
   }
   .grid .header__gal {
-    background-image: url(../imagenes/4.jpeg);
+    background-image: url(../imagenes/7.jpeg);
     background-size: 400px;
   }
   .grid .header__gal .header__titulo {
     color: #b37d22;
   }
   .grid .header__fondo {
-    background-image: url(../imagenes/3.jpeg);
+    background-image: url(../imagenes/7.jpeg);
   }
   .grid .header__fondo .header__titulo--dis {
     color: #b37d22;
@@ -199,11 +199,11 @@
     border-radius: 10px;
   }
   .grid .header__gal {
-    background-image: url(../imagenes/4.jpeg);
+    background-image: url(../imagenes/7.jpeg);
     background-size: 400px;
   }
   .grid .header__fondo {
-    background-image: url(../imagenes/3.jpeg);
+    background-image: url(../imagenes/7.jpeg);
   }
   .grid .header__fondo .header__titulo--dis {
     color: #b37d22;
@@ -222,7 +222,7 @@
 }
 .grid main {
   grid-area: main;
-  background-image: url(../imagenes/4.jpeg);
+  background-image: url(../imagenes/7.jpeg);
   background-size: 200px;
   display: flex;
   flex-direction: column;
@@ -230,12 +230,13 @@
 }
 .grid main .main--canciones__vid {
   margin-top: 20px;
+  margin-left: 5px;
   height: 200px;
   width: 300px;
 }
 .grid main h {
   font-family: curvilingus;
-  color: #b37d22;
+  color: #78180d;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
@@ -247,10 +248,11 @@
   font-weight: lighter;
   width: 250px;
   text-decoration: none;
+  margin-left: 25px;
 }
 .grid .main--galeria {
   height: 1500px;
-  background-image: url(../imagenes/4.jpeg);
+  background-image: url(../imagenes/7.jpeg);
   background-size: 400px;
   display: flex;
   flex-flow: row wrap;
@@ -268,7 +270,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
-  background-image: url(../imagenes/3.jpeg);
+  background-image: url(../imagenes/7.jpeg);
   background-size: 200px;
 }
 .grid .main--canciones .tabla {
@@ -278,23 +280,23 @@
   width: 300px;
   color: #c28722;
   border: 10px;
-  background-color: #030303;
+  background-color: rgba(77, 13, 13, 0.5137254902);
   font-family: keepontruckin;
   border-radius: 10px;
   border-color: #b37d22;
 }
 .grid .main--cont {
   height: 800px;
-  background-image: url(../imagenes/4.jpeg);
+  background-image: url(../imagenes/7.jpeg);
   background-size: 200px;
 }
 .grid .main--cont .texto__cont {
   font-family: curvilingus;
   color: #c28722;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   text-decoration: underline;
-  width: 300px;
+  width: 250px;
 }
 .grid .main--cont .formulario {
   display: flex;
@@ -320,7 +322,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-image: url(../imagenes/4.jpeg);
+  background-image: url(../imagenes/7.jpeg);
   background-size: 400px;
 }
 
@@ -366,7 +368,7 @@
   .grid .main--galeria .fotoUno {
     border-radius: 10px;
     border: 3px solid;
-    border-color: #0c0c0c;
+    border-color: #3a0e09;
     height: 300px;
     width: 300px;
     transition: all 1s ease-in-out;
@@ -374,10 +376,10 @@
   .grid .main--galeria .fotoUno:hover {
     height: 350px;
     width: 350px;
-    border-color: #b37d22;
+    border-color: #be7b15;
   }
   .grid .main--canciones {
-    background-image: url(../imagenes/3.jpeg);
+    background-image: url(../imagenes/7.jpeg);
     background-size: 400px;
     display: flex;
     align-items: center;
@@ -399,7 +401,7 @@
   }
   .grid .main--cont {
     height: 800px;
-    background-image: url(../imagenes/4.jpeg);
+    background-image: url(../imagenes/7.jpeg);
     background-size: 400px;
     display: flex;
     flex-direction: column;
@@ -440,8 +442,9 @@
     background-color: #78180d;
   }
   .grid .main--tips {
-    height: 1400px;
-    background-image: url(../imagenes/4.jpeg);
+    display: flex;
+    flex-direction: row;
+    background-image: url(../imagenes/7.jpeg);
     background-size: 400px;
   }
 }
@@ -492,7 +495,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url(../imagenes/3.jpeg);
+    background-image: url(../imagenes/7.jpeg);
     background-size: 400px;
   }
   .grid .main--canciones .tabla {
@@ -509,7 +512,7 @@
   }
   .grid .main--cont {
     height: 800px;
-    background-image: url(../imagenes/4.jpeg);
+    background-image: url(../imagenes/7.jpeg);
     background-size: 400px;
     display: flex;
     flex-direction: column;
@@ -552,7 +555,7 @@
 }
 .grid footer {
   grid-area: pieDepagina;
-  background-image: url(../imagenes/4.jpeg);
+  background-image: url(../imagenes/7.jpeg);
   background-size: 200px;
 }
 .grid footer .footer__links {
@@ -560,7 +563,7 @@
   list-style-type: none;
 }
 .grid .footer__gal {
-  background-image: url(../imagenes/4.jpeg);
+  background-image: url(../imagenes/7.jpeg);
   background-size: 400px;
   display: flex;
   flex-direction: row;
@@ -568,7 +571,7 @@
   list-style-type: none;
 }
 .grid .footer--can {
-  background-image: url(../imagenes/3.jpeg);
+  background-image: url(../imagenes/7.jpeg);
   background-size: 400px;
   margin-top: 10px;
   margin-top: 0;
@@ -577,7 +580,7 @@
   margin-top: 50px;
 }
 .grid .footer__tips {
-  background-image: url(../imagenes/4.jpeg);
+  background-image: url(../imagenes/7.jpeg);
   background-size: 400px;
 }
 
@@ -601,7 +604,7 @@
   }
   .grid .footer--can {
     margin-top: 0;
-    background-image: url(../imagenes/3.jpeg);
+    background-image: url(../imagenes/7.jpeg);
     background-size: 400px;
     display: flex;
     justify-content: center;
@@ -618,7 +621,7 @@
     list-style-type: none;
   }
   .footer--can {
-    background-image: url(../imagenes/3.jpeg);
+    background-image: url(../imagenes/7.jpeg);
     background-size: 400px;
   }
 }/*# sourceMappingURL=styles.css.map */
