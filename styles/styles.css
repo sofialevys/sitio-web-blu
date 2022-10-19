@@ -261,7 +261,7 @@
 .grid .main--galeria img {
   border-radius: 10px;
   border: 3px solid;
-  border-color: #060606;
+  border-color: #6b0e0e;
   height: 140px;
   width: 140px;
 }
@@ -486,7 +486,7 @@
   .grid .main--galeria .fotoUno {
     border-radius: 10px;
     border: 3px solid;
-    border-color: #0c0c0c;
+    border-color: #550909;
     height: 250px;
     width: 250px;
   }
@@ -497,6 +497,10 @@
     align-items: center;
     background-image: url(../imagenes/7.jpeg);
     background-size: 400px;
+  }
+  .grid .main--canciones .main--canciones__vid {
+    width: 500px;
+    height: 300px;
   }
   .grid .main--canciones .tabla {
     position: relative;
