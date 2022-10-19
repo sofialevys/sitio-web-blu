@@ -4,6 +4,11 @@
   justify-content: center;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .grid {
   display: grid;
   grid-template-areas: "cabecera" "main" "pieDepagina";
@@ -37,7 +42,7 @@
   width: 225px;
   height: 100px;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 55px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -230,7 +235,7 @@
 }
 .grid main .main--canciones__vid {
   margin-top: 20px;
-  margin-left: 5px;
+  margin-left: 10px;
   height: 200px;
   width: 300px;
 }
@@ -276,6 +281,7 @@
 .grid .main--canciones .tabla {
   position: relative;
   top: 50px;
+  margin-left: 10px;
   height: 200px;
   width: 300px;
   color: #c28722;

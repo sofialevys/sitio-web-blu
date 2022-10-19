@@ -18,7 +18,7 @@
 
         .main--canciones__vid{
             margin-top: 20px;
-            margin-left: 05px;
+            margin-left: 10px;
             height: 200px;
             width: 300px;
         }
@@ -71,6 +71,7 @@
         .tabla {
             position: relative;
             top:50px;
+            margin-left: 10px;
             height: 200px;
             width: 300px;
             color: map-get($colores, fontUno);
@@ -330,6 +331,7 @@
             align-items: center;
             background-image: url(../imagenes/7.jpeg);
             background-size: 400px;
+
              .main--canciones__vid{
                 width: 500px;
                 height: 300px;
